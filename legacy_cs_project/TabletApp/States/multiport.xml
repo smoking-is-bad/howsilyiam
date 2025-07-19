@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<states>
+  <state id="multiportscan">
+    <name>Multi-Port Scanner</name>
+    <content>TabletApp.Content.MultiPort.MultiPortScan</content>
+    <buttons>
+      <button id="back" title="Back" target="home"/>
+      <button id="settings" title="Settings" target="settings"/>
+    </buttons>
+  </state>
+</states>

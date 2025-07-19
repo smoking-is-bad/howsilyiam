@@ -1,0 +1,1001 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CECD5688-9035-4EC6-A360-54FC658A94C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TabletApp</RootNamespace>
+    <AssemblyName>smartPIMS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;qSimEnabled</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;qSimEnabled</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>SNLOGO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>ThirdParty\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>ThirdParty\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="CodersLab.Windows.Controls.TreeView, Version=1.0.1.17492, Culture=neutral, PublicKeyToken=34b34856bb993019, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdParty\CodersLab.Windows.Controls.TreeView.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.Bson.1.0.3\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.6.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DsiApi\ApiResources.Designer.cs">
+      <Link>Api\DsiApi\ApiResources.Designer.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApiResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="..\DsiApi\BufferExtensions.cs">
+      <Link>Api\DsiApi\BufferExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DateExtensions.cs">
+      <Link>Api\DsiApi\DateExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DsiConfiguration.cs">
+      <Link>Api\DsiApi\DsiConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DsiException.cs">
+      <Link>Api\DsiApi\DsiException.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DsiIo.cs">
+      <Link>Api\DsiApi\DsiIo.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DsiNetwork.cs">
+      <Link>Api\DsiApi\DsiNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DsiStateException.cs">
+      <Link>Api\DsiApi\DsiStateException.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ExceptionExtensions.cs">
+      <Link>Api\DsiApi\ExceptionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\MeasurementParam.cs">
+      <Link>Api\DsiApi\MeasurementParam.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ModBus.cs">
+      <Link>Api\DsiApi\ModBus.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ModBusCommands.cs">
+      <Link>Api\DsiApi\ModBusCommands.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ModBusNetwork.cs">
+      <Link>Api\DsiApi\ModBusNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ModBusPacket.cs">
+      <Link>Api\DsiApi\ModBusPacket.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\Ports.cs">
+      <Link>Api\DsiApi\Ports.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\SerialPacketHandler.cs">
+      <Link>Api\DsiApi\SerialPacketHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\StringExtensions.cs">
+      <Link>Api\DsiApi\StringExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ThicknessCalculator.cs">
+      <Link>Api\DsiApi\ThicknessCalculator.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\Utf8String.cs">
+      <Link>Api\DsiApi\Utf8String.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\Util.cs">
+      <Link>Api\DsiApi\Util.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiSim\AscanDataSim.cs">
+      <Link>Api\DsiApi\AscanDataSim.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiSim\DsiSim.cs">
+      <Link>Api\DsiApi\DsiSim.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiSim\MockData.cs">
+      <Link>Api\Model\MockData.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiSim\SimPacketHandler.cs">
+      <Link>Api\DsiApi\SimPacketHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Logging\Logger.cs">
+      <Link>Api\Logging\Logger.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\AssetPlantSite.cs">
+      <Link>Api\Model\AssetPlantSite.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\CollectionPoint.cs">
+      <Link>Api\Model\CollectionPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Company.cs">
+      <Link>Api\Model\Company.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\DsiInfo.cs">
+      <Link>Api\Model\DsiInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Gate.cs">
+      <Link>Api\Model\Gate.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Location.cs">
+      <Link>Api\Model\Location.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\ModelEquality.cs">
+      <Link>Api\Model\ModelEquality.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\NanoSense.cs">
+      <Link>Api\Model\NanoSense.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Probe.cs">
+      <Link>Api\Model\Probe.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Setup.cs">
+      <Link>Api\Model\Setup.cs</Link>
+    </Compile>
+    <Compile Include="..\Network\NanoSenseClient.cs">
+      <Link>Api\Network\NanoSenseClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Network\ServerResponse.cs">
+      <Link>Api\Network\ServerResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Network\Uploader.cs">
+      <Link>Api\Network\Uploader.cs</Link>
+    </Compile>
+    <Compile Include="Api\ApiManager.cs" />
+    <Compile Include="Api\DsiCountException.cs" />
+    <Compile Include="Api\MasterDsiInfo.cs" />
+    <Compile Include="Api\MultiPort\MultiPortScanManager.cs" />
+    <Compile Include="Api\Network\DataLoggerChecker.cs" />
+    <Compile Include="Autofill\AutofillManager.cs" />
+    <Compile Include="Autofill\AutofillSource.cs" />
+    <Compile Include="AutoRead\AutoReadManager.cs" />
+    <Compile Include="Content\About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\BaseContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\BuildNetwork.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\BuildNetwork.Designer.cs">
+      <DependentUpon>BuildNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Commissioning\Camera.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\Camera.Designer.cs">
+      <DependentUpon>Camera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Commissioning\CollectData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\ConnectDsi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\DsiData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\DsiData.Designer.cs">
+      <DependentUpon>DsiData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Commissioning\Main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Commissioning\MeasureNetwork.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\New.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\New.Designer.cs">
+      <DependentUpon>New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Commissioning\NewCompany.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\NewCompany.Designer.cs">
+      <DependentUpon>NewCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Commissioning\ProbeParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\ProbeParams.Designer.cs">
+      <DependentUpon>ProbeParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Commissioning\ResetDsi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Commissioning\ResetDsi.Designer.cs">
+      <DependentUpon>ResetDsi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Commissioning\SetDsiAddress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\DataViewAscan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\DataViewAscan.Designer.cs">
+      <DependentUpon>DataViewAscan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\DataViewSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\DataViewSummary.Designer.cs">
+      <DependentUpon>DataViewSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Email.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Email.Designer.cs">
+      <DependentUpon>Email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\HookUpDsi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\HookUpDsi.Designer.cs">
+      <DependentUpon>HookUpDsi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\FileSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\FileSelect.Designer.cs">
+      <DependentUpon>FileSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\DataViewThickness.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\DataViewThickness.Designer.cs">
+      <DependentUpon>DataViewThickness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\MultiPort\MultiPortScan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\MultiPort\MultiPortScan.Designer.cs">
+      <DependentUpon>MultiPortScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ReadLogger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Message.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Message.Designer.cs">
+      <DependentUpon>Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Upload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\Upload.Designer.cs">
+      <DependentUpon>Upload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Email\EmailManager.cs" />
+    <Compile Include="Persist\CsvFile.cs" />
+    <Compile Include="Persist\DirNode.cs" />
+    <Compile Include="Persist\DirStructure.cs" />
+    <Compile Include="Persist\FileManager.cs" />
+    <Compile Include="Persist\Legacy\DirNode.cs" />
+    <Compile Include="Persist\Legacy\DirStructure.cs" />
+    <Compile Include="Persist\SniCsvFile.cs" />
+    <Compile Include="Persist\MeasurementFile.cs" />
+    <Compile Include="Persist\SummaryFile.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="State\Button.cs" />
+    <Compile Include="State\Param.cs" />
+    <Compile Include="State\State.cs" />
+    <Compile Include="State\StateController.cs" />
+    <Compile Include="State\StateDef.cs" />
+    <Compile Include="State\StateException.cs" />
+    <Compile Include="State\StateObject.cs" />
+    <Compile Include="Utils\AdminChecker.cs" />
+    <Compile Include="Utils\DataExtensions.cs" />
+    <Compile Include="Utils\Extensions.cs" />
+    <Compile Include="Utils\Output.cs" />
+    <Compile Include="Utils\PasswordManager.cs" />
+    <Compile Include="Utils\ProbeDrawing.cs" />
+    <Compile Include="Utils\ScaleUtils.cs" />
+    <Compile Include="Utils\Singleton.cs" />
+    <Compile Include="Utils\TextInputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\TextInputDialog.Designer.cs">
+      <DependentUpon>TextInputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\TimeZoneMapping.cs" />
+    <Compile Include="Utils\UnitUtils.cs" />
+    <Compile Include="Utils\Utilities.cs" />
+    <Compile Include="Views\AscanList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AscanList.Designer.cs">
+      <DependentUpon>AscanList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AscanListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AscanListItem.Designer.cs">
+      <DependentUpon>AscanListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AscanWaveform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AscanWaveform.Designer.cs">
+      <DependentUpon>AscanWaveform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AutoReadView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AutoReadView.Designer.cs">
+      <DependentUpon>AutoReadView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeleteButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\DsiGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DsiGrid.Designer.cs">
+      <DependentUpon>DsiGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DsiButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DsiButton.Designer.cs">
+      <DependentUpon>DsiButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DsiStats.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DsiStats.Designer.cs">
+      <DependentUpon>DsiStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DsiInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DsiInfo.Designer.cs">
+      <DependentUpon>DsiInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DsiReadProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DsiReadProgress.Designer.cs">
+      <DependentUpon>DsiReadProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FileList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FileList.Designer.cs">
+      <DependentUpon>FileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FloatTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\FloatNegTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\DaysHoursMinutesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DaysHoursMinutesView.Designer.cs">
+      <DependentUpon>DaysHoursMinutesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FloatTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\GateColumn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\GateColumn.Designer.cs">
+      <DependentUpon>GateColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LatLongView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LatLongView.Designer.cs">
+      <DependentUpon>LatLongView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LocationInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LocationInfo.Designer.cs">
+      <DependentUpon>LocationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NumberTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\ProbeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProbeList.Designer.cs">
+      <DependentUpon>ProbeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProbeListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProbeListItem.Designer.cs">
+      <DependentUpon>ProbeListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SetupTabContents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SetupTabContents.Designer.cs">
+      <DependentUpon>SetupTabContents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShotNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ShotNavigator.Designer.cs">
+      <DependentUpon>ShotNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SpinnerProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SpinnerProgress.Designer.cs">
+      <DependentUpon>SpinnerProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SummaryGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SummaryGrid.Designer.cs">
+      <DependentUpon>SummaryGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NumberPad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\NumberPad.Designer.cs">
+      <DependentUpon>NumberPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpDownControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UpDownControl.Designer.cs">
+      <DependentUpon>UpDownControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WizardForm.Designer.cs">
+      <DependentUpon>WizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WizardForm.zh.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WizardForm.zh.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\DsiApi\ApiResources.ja.resx">
+      <Link>Api\DsiApi\ApiResources.ja.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\DsiApi\ApiResources.resx">
+      <Link>Api\DsiApi\ApiResources.resx</Link>
+      <CustomToolNamespace>DsiApi</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ApiResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\DsiApi\ApiResources.zh.resx">
+      <Link>Api\DsiApi\ApiResources.zh.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\About.ja.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\BuildNetwork.resx">
+      <DependentUpon>BuildNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\Camera.ja.resx">
+      <DependentUpon>Camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\Camera.resx">
+      <DependentUpon>Camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\DsiData.ja.resx">
+      <DependentUpon>DsiData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\DsiData.resx">
+      <DependentUpon>DsiData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\Main.ja.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\New.ja.resx">
+      <DependentUpon>New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\New.resx">
+      <DependentUpon>New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\NewCompany.ja.resx">
+      <DependentUpon>NewCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\NewCompany.resx">
+      <DependentUpon>NewCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\ProbeParams.ja.resx">
+      <DependentUpon>ProbeParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\ProbeParams.resx">
+      <DependentUpon>ProbeParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Commissioning\ResetDsi.resx">
+      <DependentUpon>ResetDsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\DataViewAscan.resx">
+      <DependentUpon>DataViewAscan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\DataViewSummary.resx">
+      <DependentUpon>DataViewSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\DataViewThickness.ja.resx">
+      <DependentUpon>DataViewThickness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\DataViewThickness.resx">
+      <DependentUpon>DataViewThickness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Email.ja.resx">
+      <DependentUpon>Email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Email.resx">
+      <DependentUpon>Email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\FileSelect.ja.resx">
+      <DependentUpon>FileSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Home.ja.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\HookUpDsi.ja.resx">
+      <DependentUpon>HookUpDsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\HookUpDsi.resx">
+      <DependentUpon>HookUpDsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\FileSelect.resx">
+      <DependentUpon>FileSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Message.resx">
+      <DependentUpon>Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Settings.ja.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Upload.resx">
+      <DependentUpon>Upload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ja.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\TextInputDialog.resx">
+      <DependentUpon>TextInputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AscanList.resx">
+      <DependentUpon>AscanList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AscanListItem.ja.resx">
+      <DependentUpon>AscanListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AscanListItem.resx">
+      <DependentUpon>AscanListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AscanWaveform.resx">
+      <DependentUpon>AscanWaveform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AutoReadView.ja.resx">
+      <DependentUpon>AutoReadView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AutoReadView.resx">
+      <DependentUpon>AutoReadView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DaysHoursMinutesView.ja.resx">
+      <DependentUpon>DaysHoursMinutesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DsiGrid.resx">
+      <DependentUpon>DsiGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DsiButton.resx">
+      <DependentUpon>DsiButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DsiInfo.ja.resx">
+      <DependentUpon>DsiInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DsiReadProgress.ja.resx">
+      <DependentUpon>DsiReadProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DsiStats.ja.resx">
+      <DependentUpon>DsiStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DsiStats.resx">
+      <DependentUpon>DsiStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DsiInfo.resx">
+      <DependentUpon>DsiInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DsiReadProgress.resx">
+      <DependentUpon>DsiReadProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FileList.resx">
+      <DependentUpon>FileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DaysHoursMinutesView.resx">
+      <DependentUpon>DaysHoursMinutesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GateColumn.ja.resx">
+      <DependentUpon>GateColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GateColumn.resx">
+      <DependentUpon>GateColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LatLongView.ja.resx">
+      <DependentUpon>LatLongView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LatLongView.resx">
+      <DependentUpon>LatLongView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LocationInfo.resx">
+      <DependentUpon>LocationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NumberPad.ja.resx">
+      <DependentUpon>NumberPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProbeList.resx">
+      <DependentUpon>ProbeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProbeListItem.ja.resx">
+      <DependentUpon>ProbeListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProbeListItem.resx">
+      <DependentUpon>ProbeListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SetupTabContents.ja.resx">
+      <DependentUpon>SetupTabContents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SetupTabContents.resx">
+      <DependentUpon>SetupTabContents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ShotNavigator.resx">
+      <DependentUpon>ShotNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SpinnerProgress.ja.resx">
+      <DependentUpon>SpinnerProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SpinnerProgress.resx">
+      <DependentUpon>SpinnerProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SummaryGrid.ja.resx">
+      <DependentUpon>SummaryGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SummaryGrid.resx">
+      <DependentUpon>SummaryGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NumberPad.resx">
+      <DependentUpon>NumberPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UpDownControl.resx">
+      <DependentUpon>UpDownControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizardForm.ja.resx">
+      <DependentUpon>WizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizardForm.resx">
+      <DependentUpon>WizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Help\manual.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="WizardForm.zh.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WizardForm.zh.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\About.zh.resx" />
+    <EmbeddedResource Include="Content\DataViewThickness.zh.resx" />
+    <EmbeddedResource Include="Content\Email.zh.resx" />
+    <EmbeddedResource Include="Content\FileSelect.zh.resx" />
+    <EmbeddedResource Include="Content\Home.zh.resx" />
+    <EmbeddedResource Include="Content\HookUpDsi.zh.resx" />
+    <EmbeddedResource Include="Content\Settings.zh.resx" />
+    <EmbeddedResource Include="Content\Commissioning\Camera.zh.resx" />
+    <EmbeddedResource Include="Content\Commissioning\DsiData.zh.resx" />
+    <EmbeddedResource Include="Content\Commissioning\Main.zh.resx" />
+    <EmbeddedResource Include="Content\Commissioning\New.zh.resx" />
+    <EmbeddedResource Include="Content\Commissioning\NewCompany.zh.resx" />
+    <EmbeddedResource Include="Content\Commissioning\ProbeParams.zh.resx" />
+    <EmbeddedResource Include="Properties\Resources.zh.resx" />
+    <EmbeddedResource Include="Views\AscanListItem.zh.resx" />
+    <EmbeddedResource Include="Views\AutoReadView.zh.resx" />
+    <EmbeddedResource Include="Views\DaysHoursMinutesView.zh.resx" />
+    <EmbeddedResource Include="Views\DsiInfo.zh.resx" />
+    <EmbeddedResource Include="Views\DsiReadProgress.zh.resx" />
+    <EmbeddedResource Include="Views\GateColumn.zh.resx" />
+    <EmbeddedResource Include="Views\LatLongView.zh.resx" />
+    <EmbeddedResource Include="Views\NumberPad.zh.resx" />
+    <EmbeddedResource Include="Views\ProbeListItem.zh.resx" />
+    <EmbeddedResource Include="Views\SetupTabContents.zh.resx" />
+    <EmbeddedResource Include="Views\SpinnerProgress.zh.resx" />
+    <EmbeddedResource Include="Views\SummaryGrid.zh.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\hamburger-on.png" />
+    <None Include="Resources\x2.png" />
+    <Content Include="Background\default.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Commissioning\DsiConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Default-2-1072-scan-view-network-UI3-15928163.png" />
+    <None Include="Resources\Default-3-1074-Display-read-progress-UI4-15928164.png" />
+    <None Include="Resources\Default-4-1076-Data-view-thickness-UI5-15928165.png" />
+    <None Include="Resources\Default-5-1078-Data-view-2-AScans-UI5A-15928166.png" />
+    <None Include="Resources\Default-6-1080-Data-view-3-summary-UI5B-15928167.png" />
+    <None Include="Resources\dsi.png" />
+    <None Include="Resources\dsi_active.png" />
+    <None Include="Resources\dsi_blank.png" />
+    <None Include="Resources\dsi_error.png" />
+    <None Include="Resources\sensor_active.png" />
+    <None Include="Resources\sensor_inactive.png" />
+    <None Include="Resources\ascanwaveform.png" />
+    <None Include="Resources\dsi_warning.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\commissioning.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\sidebar.png" />
+    <None Include="Resources\sidebar-active.png" />
+    <None Include="Resources\header-bg.png" />
+    <None Include="Resources\quit.png" />
+    <None Include="Resources\dsi_error_active.png" />
+    <None Include="Resources\dsi_warning_active.png" />
+    <None Include="Resources\blue_button_big.png" />
+    <None Include="Resources\blue_button_small.png" />
+    <None Include="Resources\camera-icon.png" />
+    <None Include="Resources\cloud-icon.png" />
+    <None Include="Resources\email-icon.png" />
+    <None Include="Resources\select-icon.png" />
+    <None Include="Resources\sensor-icon.png" />
+    <None Include="Resources\upload-icon.png" />
+    <None Include="Resources\view-icon.png" />
+    <None Include="Resources\gray_button.png" />
+    <None Include="Resources\sensor_red.png" />
+    <None Include="Resources\sensor_red_inactive.png" />
+    <None Include="Resources\sensor_yellow.png" />
+    <None Include="Resources\sensor_yellow_inactive.png" />
+    <None Include="Resources\hookup.jpg" />
+    <None Include="Resources\spinner.gif" />
+    <None Include="Resources\keyboard.png" />
+    <EmbeddedResource Include="Resources\shutter.wav" />
+    <None Include="Resources\blue_button_up.png" />
+    <None Include="Resources\blue_button_down.png" />
+    <None Include="Resources\blue_button_left.png" />
+    <None Include="Resources\blue_button_right.png" />
+    <Content Include="Resources\upload_fail.png" />
+    <Content Include="Resources\upload_success.png" />
+    <Content Include="Sim\bad.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sim\FeydoProbe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sim\FeydoProbeAddr2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sim\jim-summary-error-DEMO_1DSI.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sim\mode2SingleMode.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sim\singleProbe.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sim\SunocoMarcusHook_3DSIs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sim\testdata2probes.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sim\testdata_3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sim\testdata_3DSIs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sim\testdata_3_2_DSIs.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Sim\testMaxDsi.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sim\threeProbes.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SNLOGO.ico" />
+    <Content Include="States\multiport.xml" />
+    <Content Include="State\StateDef.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TabletApp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>::net use X: \\nanosense1\Users\Jeff\Documents
+::xcopy /y /r $(TargetDir)$(TargetFileName) x:\nanosense
+::mkdir x:\nanosense\Help
+::mkdir x:\nanosense\State
+::xcopy /y /s $(TargetDir)Help x:\nanosense\Help
+::xcopy /y /s $(TargetDir)State x:\nanosense\State</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

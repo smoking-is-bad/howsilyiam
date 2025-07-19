@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chinh\\Desktop\\smartpims\\TabletApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CECD5688-9035-4EC6-A360-54FC658A94C1}|smartpims.csproj|c:\\users\\chinh\\desktop\\smartpims\\tabletapp\\content\\multiport\\multiportscan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECD5688-9035-4EC6-A360-54FC658A94C1}|smartpims.csproj|solutionrelative:content\\multiport\\multiportscan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECD5688-9035-4EC6-A360-54FC658A94C1}|smartpims.csproj|c:\\users\\chinh\\desktop\\smartpims\\tabletapp\\wizardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECD5688-9035-4EC6-A360-54FC658A94C1}|smartpims.csproj|solutionrelative:wizardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECD5688-9035-4EC6-A360-54FC658A94C1}|smartpims.csproj|c:\\users\\chinh\\desktop\\smartpims\\tabletapp\\content\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECD5688-9035-4EC6-A360-54FC658A94C1}|smartpims.csproj|solutionrelative:content\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECD5688-9035-4EC6-A360-54FC658A94C1}|smartpims.csproj|c:\\users\\chinh\\desktop\\smartpims\\tabletapp\\properties\\settings.settings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CECD5688-9035-4EC6-A360-54FC658A94C1}|smartpims.csproj|solutionrelative:properties\\settings.settings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MultiPortScan.cs",
+              "DocumentMoniker": "C:\\Users\\chinh\\Desktop\\smartpims\\TabletApp\\Content\\MultiPort\\MultiPortScan.cs",
+              "RelativeDocumentMoniker": "Content\\MultiPort\\MultiPortScan.cs",
+              "ToolTip": "C:\\Users\\chinh\\Desktop\\smartpims\\TabletApp\\Content\\MultiPort\\MultiPortScan.cs",
+              "RelativeToolTip": "Content\\MultiPort\\MultiPortScan.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAowFEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T06:08:14.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WizardForm.cs",
+              "DocumentMoniker": "C:\\Users\\chinh\\Desktop\\smartpims\\TabletApp\\WizardForm.cs",
+              "RelativeDocumentMoniker": "WizardForm.cs",
+              "ToolTip": "C:\\Users\\chinh\\Desktop\\smartpims\\TabletApp\\WizardForm.cs",
+              "RelativeToolTip": "WizardForm.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAArwCkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T06:07:18.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\chinh\\Desktop\\smartpims\\TabletApp\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\chinh\\Desktop\\smartpims\\TabletApp\\Properties\\Settings.settings",
+              "RelativeToolTip": "Properties\\Settings.settings",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2025-07-18T06:03:11.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "C:\\Users\\chinh\\Desktop\\smartpims\\TabletApp\\Content\\Settings.cs",
+              "RelativeDocumentMoniker": "Content\\Settings.cs",
+              "ToolTip": "C:\\Users\\chinh\\Desktop\\smartpims\\TabletApp\\Content\\Settings.cs",
+              "RelativeToolTip": "Content\\Settings.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAowBQBAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T06:02:52.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SelectFilesForReviewPrompt" xml:space="preserve">
+    <value>選択したファイルをレビュー</value>
+  </data>
+  <data name="SelectFilesForUploadPrompt" xml:space="preserve">
+    <value>選択したファイルをアップロード</value>
+  </data>
+  <data name="ProbeNumber" xml:space="preserve">
+    <value>プローブ＃{0}</value>
+  </data>
+  <data name="ErrorCaption" xml:space="preserve">
+    <value>smartPIMSエラー</value>
+  </data>
+  <data name="ErrorScannedCounts" xml:space="preserve">
+    <value>スキャンされたDSIの数量と設置の数量が合いません。</value>
+  </data>
+  <data name="ErrorScanNetwork" xml:space="preserve">
+    <value>DSIネットワークスキャン中にエラー</value>
+  </data>
+  <data name="ErrorScanNetworkTimeout" xml:space="preserve">
+    <value>DSIネットワークスキャン中にタイムアウト</value>
+  </data>
+  <data name="ErrorUnhandledException" xml:space="preserve">
+    <value>補足されない例外が発生しました。アプリケーションを再スタートして下さい。</value>
+  </data>
+  <data name="ErrorReadProbes" xml:space="preserve">
+    <value>厚さ計測中のエラー</value>
+  </data>
+  <data name="ErrorReadProbesTimeout" xml:space="preserve">
+    <value>厚さ計測中にタイムアウトが発生</value>
+  </data>
+  <data name="ReadProgressDsiString" xml:space="preserve">
+    <value>DSI{0}/{1}読込中</value>
+  </data>
+  <data name="CancelCaption" xml:space="preserve">
+    <value>現在の操作をキャンセルしますか？</value>
+  </data>
+  <data name="CancelMessage" xml:space="preserve">
+    <value>本当に現在の操作をキャンセルしますか？</value>
+  </data>
+  <data name="QuitCaption" xml:space="preserve">
+    <value>アプリケーションを終了しますか？</value>
+  </data>
+  <data name="QuitMessage" xml:space="preserve">
+    <value>本当にアプリケーションを終了しますか？</value>
+  </data>
+  <data name="ErrorLoginTimeout" xml:space="preserve">
+    <value>ログイン中にタイムアウトが発生</value>
+  </data>
+  <data name="ErrorLogoutTimeout" xml:space="preserve">
+    <value>ログアウト中にタイムアウトが発生。</value>
+  </data>
+  <data name="ErrorNoDsisFound" xml:space="preserve">
+    <value>DSIがネットワーク上で見つかりません。</value>
+  </data>
+  <data name="ErrorSave" xml:space="preserve">
+    <value>保存中にエラーが発生</value>
+  </data>
+  <data name="ErrorUpload" xml:space="preserve">
+    <value>アップロード中にエラーが発生。</value>
+  </data>
+  <data name="ErrorUploadTimeout" xml:space="preserve">
+    <value>アップロード中にタイムアウトしました。</value>
+  </data>
+  <data name="RootXmlFolderName_Legacy" xml:space="preserve">
+    <value>SensorNetworks</value>
+  </data>
+  <data name="UploadProgressString" xml:space="preserve">
+    <value>ファイル{0}/{1}アップロード中</value>
+  </data>
+  <data name="UploadComplete" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="DirMappingFilename" xml:space="preserve">
+    <value>.contents</value>
+  </data>
+  <data name="ErrorScannedCounts2" xml:space="preserve">
+    <value>スキャンしたDSI数量は回収された数量と合いません。</value>
+  </data>
+  <data name="ErrorMaxReviewFilenames" xml:space="preserve">
+    <value>ファイル最大数をオーバーしています。最初の{0}個のファイルを取得します。</value>
+  </data>
+  <data name="SummaryCsvFilename" xml:space="preserve">
+    <value>summary.csv</value>
+  </data>
+  <data name="ErrorNoEmailSettings" xml:space="preserve">
+    <value>Eメール設定が未設定です。設定メニューにて設定して下さい。</value>
+  </data>
+  <data name="ErrorSendEmail" xml:space="preserve">
+    <value>メール送信中エラー</value>
+  </data>
+  <data name="ErrorSendEmailTimeout" xml:space="preserve">
+    <value>メール送信中にタイムアウトしました。</value>
+  </data>
+  <data name="ErrorEmailFromMissing" xml:space="preserve">
+    <value>From 欄は入力必須です。</value>
+  </data>
+  <data name="ErrorEmailToMissing" xml:space="preserve">
+    <value>To 欄は入力必須です。</value>
+  </data>
+  <data name="ErrorSaveSummary" xml:space="preserve">
+    <value>summary.fileセーブ中にエラー</value>
+  </data>
+  <data name="ErrorSaveXml" xml:space="preserve">
+    <value>DSI XLM.セーブ中にエラー</value>
+  </data>
+  <data name="EmailProgressFail" xml:space="preserve">
+    <value>Eメールが送信出来ませんでした。</value>
+  </data>
+  <data name="EmailProgressSending" xml:space="preserve">
+    <value>Eメール送信中…</value>
+  </data>
+  <data name="EmailProgressSuccess" xml:space="preserve">
+    <value>Eメール送信完了しました。</value>
+  </data>
+  <data name="ScanProgress" xml:space="preserve">
+    <value>ネットワークスキャン中…</value>
+  </data>
+  <data name="AutoReadUploadProgress" xml:space="preserve">
+    <value>アップロード中…</value>
+  </data>
+  <data name="ReadProgressWaiting" xml:space="preserve">
+    <value>お待ちください。</value>
+  </data>
+  <data name="AutoReadCancelCaption" xml:space="preserve">
+    <value>自動読込停止しますか？</value>
+  </data>
+  <data name="AutoReadCancelMessage" xml:space="preserve">
+    <value>現在の自動読込セッションを中止しますか？</value>
+  </data>
+  <data name="InitializeNetworkProgress" xml:space="preserve">
+    <value>ネットワーク初期化中…</value>
+  </data>
+  <data name="CommissioningConfirmMessage" xml:space="preserve">
+    <value>コミッショニングモードに入りますか？このモードはネットワーク上でDSIを変更します。</value>
+  </data>
+  <data name="ErrorCommissioningUserNotAdmin" xml:space="preserve">
+    <value>DSIをコミッションするためにはこの装置の管理権限が必要です。　　　　　　　　　　　　　　　　　　　　　　　　</value>
+  </data>
+  <data name="ErrorNoLocation" xml:space="preserve">
+    <value>現在の場所が確認出来ません。</value>
+  </data>
+  <data name="GeneralMessageCaption" xml:space="preserve">
+    <value>smartPIMS</value>
+  </data>
+  <data name="GetLocationProgress" xml:space="preserve">
+    <value>現在の場所を入手中…</value>
+  </data>
+  <data name="CheckAdminProgressString" xml:space="preserve">
+    <value>管理権限を確認中…</value>
+  </data>
+  <data name="AutoFillCompanyFilename" xml:space="preserve">
+    <value>Company.xml</value>
+  </data>
+  <data name="AutoFillProbeFilename" xml:space="preserve">
+    <value>Probe.xml</value>
+  </data>
+  <data name="ErrorCommCompanyNameRequired" xml:space="preserve">
+    <value>企業名欄は入力必須です。</value>
+  </data>
+  <data name="ErrorCommCompanyRequired" xml:space="preserve">
+    <value>企業欄は入力必須です。</value>
+  </data>
+  <data name="ErrorCommNumDsisRequired" xml:space="preserve">
+    <value>DSI数量は入力必須です。</value>
+  </data>
+  <data name="ErrorCommSitePlantAssetRequired" xml:space="preserve">
+    <value>少なくとも1つのサイト、プラントまたはアセットが必要です。</value>
+  </data>
+  <data name="RootDataFolderName" xml:space="preserve">
+    <value>SensorNetworks</value>
+  </data>
+  <data name="ErrorCommCollectionPointLocationRequired" xml:space="preserve">
+    <value>収集ポイント場所が必要です。</value>
+  </data>
+  <data name="ErrorCommCollectionPointNameRequired" xml:space="preserve">
+    <value>収集ポイント名が必要です</value>
+  </data>
+  <data name="ErrorCommNumDsis" xml:space="preserve">
+    <value>DSIの最大数量は32台です。</value>
+  </data>
+  <data name="SetupTabTitle" xml:space="preserve">
+    <value>セットアップ{0}</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>smartPIMS</value>
+  </data>
+  <data name="LogFilename" xml:space="preserve">
+    <value>log.txt</value>
+  </data>
+  <data name="ErrorCommDsiNotFound" xml:space="preserve">
+    <value>DSIが見つかりませんでした。再度スキャンしますか？</value>
+  </data>
+  <data name="ErrorCommReadDsiAndProbes" xml:space="preserve">
+    <value>DSIとプローブデータ読込中にエラーが発生。</value>
+  </data>
+  <data name="ErrorCommSetAddress" xml:space="preserve">
+    <value>DSIアドレスをセット中にエラーが起こりました。</value>
+  </data>
+  <data name="ErrorCommSetAddressRead" xml:space="preserve">
+    <value>DSI{0}は新しいアドレスで読み込むことが出来ませんでした。</value>
+  </data>
+  <data name="ErrorCommWriteDsiInfoException" xml:space="preserve">
+    <value>DSIに情報を書込み中にエラーが発生。</value>
+  </data>
+  <data name="ErrorCommWriteDsiInfoFailed" xml:space="preserve">
+    <value>DSIに情報を書込むことが出来ません。ログをチェックして下さい。</value>
+  </data>
+  <data name="ConnectDsiProgress" xml:space="preserve">
+    <value>DSIを検索中</value>
+  </data>
+  <data name="ErrorCommWriteProbeDataException" xml:space="preserve">
+    <value>プローブデータ書き込み中に例外が発生しました。</value>
+  </data>
+  <data name="ErrorCommWriteProbeDataFailed" xml:space="preserve">
+    <value>プローブデータ書き込みできませんでした。ログをチェックしてください。</value>
+  </data>
+  <data name="ErrorCameraNotFound" xml:space="preserve">
+    <value>カメラが見つかりませんでした。</value>
+  </data>
+  <data name="PerformMeasurementProgress" xml:space="preserve">
+    <value>計測中…</value>
+  </data>
+  <data name="BuildNetworkCancelCaption" xml:space="preserve">
+    <value>コミッショニングをキャンセルしますか？</value>
+  </data>
+  <data name="BuildNetworkCancelMessage" xml:space="preserve">
+    <value>現在のコミッショニングプロセスをキャンセルしますか？</value>
+  </data>
+  <data name="ConnectStringCaption" xml:space="preserve">
+    <value>線は接続されましたか？</value>
+  </data>
+  <data name="ConnectStringMessage" xml:space="preserve">
+    <value>線が確実に接続されている事を確認して下さい。続行しますか？</value>
+  </data>
+  <data name="ErrorVelocityParams" xml:space="preserve">
+    <value>無効なゲート設定です。Aスキャンが見える範囲でゲートの始点と終点を調節して下さい。</value>
+  </data>
+  <data name="DefaultLanguage" xml:space="preserve">
+    <value>Default (English)</value>
+  </data>
+  <data name="ErrorWriteGlobalInfo" xml:space="preserve">
+    <value>グローバル情報書込みエラー。ログをチェックして下さい。</value>
+  </data>
+  <data name="ButtonAdd" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="ButtonBack" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="ButtonCamera" xml:space="preserve">
+    <value>カメラ</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="ButtonCloud" xml:space="preserve">
+    <value>クラウド</value>
+  </data>
+  <data name="ButtonCopy" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="ButtonDone" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="ButtonEdit" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="ButtonEditGlobals" xml:space="preserve">
+    <value>グローバル編集</value>
+  </data>
+  <data name="ButtonEmail" xml:space="preserve">
+    <value>Eメール</value>
+  </data>
+  <data name="ButtonKeyboard" xml:space="preserve">
+    <value>キーボード</value>
+  </data>
+  <data name="ButtonNext" xml:space="preserve">
+    <value>次へ</value>
+  </data>
+  <data name="ButtonNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ButtonOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ButtonPrevious" xml:space="preserve">
+    <value>前へ</value>
+  </data>
+  <data name="ButtonReadAll" xml:space="preserve">
+    <value>すべて読み込む</value>
+  </data>
+  <data name="ButtonReadSelected" xml:space="preserve">
+    <value>選択して読み込む</value>
+  </data>
+  <data name="ButtonReplace" xml:space="preserve">
+    <value>リプレース</value>
+  </data>
+  <data name="ButtonRescan" xml:space="preserve">
+    <value>再スキャン</value>
+  </data>
+  <data name="ButtonReset" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="ButtonResetAddress" xml:space="preserve">
+    <value>アドレスをリセット</value>
+  </data>
+  <data name="ButtonReview" xml:space="preserve">
+    <value>レビュー</value>
+  </data>
+  <data name="ButtonSave" xml:space="preserve">
+    <value>セーブ</value>
+  </data>
+  <data name="ButtonScratch" xml:space="preserve">
+    <value>スクラッチ</value>
+  </data>
+  <data name="ButtonSend" xml:space="preserve">
+    <value>送る</value>
+  </data>
+  <data name="ButtonStart" xml:space="preserve">
+    <value>スタート</value>
+  </data>
+  <data name="ButtonUpload" xml:space="preserve">
+    <value>アップロード</value>
+  </data>
+  <data name="ButtonViewAscan" xml:space="preserve">
+    <value>Aスキャンを確認</value>
+  </data>
+  <data name="ButtonViewSummary" xml:space="preserve">
+    <value>サマリーを確認</value>
+  </data>
+  <data name="ButtonViewThickness" xml:space="preserve">
+    <value>厚さを確認</value>
+  </data>
+  <data name="ButtonYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="CancelDsiCaption" xml:space="preserve">
+    <value>コミッショニングをキャンセルしますか？</value>
+  </data>
+  <data name="CancelDsiDataMessage" xml:space="preserve">
+    <value>コミッショニングをキャンセルしますか？全てのデータは失われDSIは工場出荷時に初期化されます。</value>
+  </data>
+  <data name="DefaultWebUrl" xml:space="preserve">
+    <value>https://www.smartpims.com</value>
+  </data>
+  <data name="ErrorOnlyFactoryDsiFound" xml:space="preserve">
+    <value>コミッションされていないDSIがネットワーク上で見つかりました。まずDSIをコミッションして下さい。</value>
+  </data>
+  <data name="MessageCollect" xml:space="preserve">
+    <value>この時点でDSIとプローブから超音波データを取集しますか？</value>
+  </data>
+  <data name="MessageCopyScratch" xml:space="preserve">
+    <value>古いDSIをコピーしますか？または最初からスタートしますか？</value>
+  </data>
+  <data name="MessageMeasure" xml:space="preserve">
+    <value>全てのDSIネットワークを測定または最初の測定なしでコミッションを終了しますか？</value>
+  </data>
+  <data name="MessagePlug" xml:space="preserve">
+    <value>ネットワークに加えたいDSIに装置のプラグを差し込みOKをクリックして下さい。</value>
+  </data>
+  <data name="MessagePlugAdd" xml:space="preserve">
+    <value>新しいDSIをネットワークに接続して下さい。既存のDSIは切らないで下さい。</value>
+  </data>
+  <data name="MessagePlugAddEditReplace" xml:space="preserve">
+    <value>DSIの線を確実に接続して下さい。超音波パラメーターが編集されたらそれぞれのDSIに接続が出来ます。</value>
+  </data>
+  <data name="MessagePlugReplace" xml:space="preserve">
+    <value>新しいDSIをネットワークに接続して下さい。取替前に必ず前のDSIは取り除いて下さい。しかし他のDSIはそのままにして下さい。</value>
+  </data>
+  <data name="MessageWarning" xml:space="preserve">
+    <value>警告：DSIアドレスは{0}に変更され、全ての既存の情報は消去か上書きされます。続けるにはOKをクリックして下さい。</value>
+  </data>
+  <data name="MessageWarningReset" xml:space="preserve">
+    <value>リセットアドレスをクリックしてDSIを工場アドレスにリセットし、Homeに戻ります。</value>
+  </data>
+  <data name="StateTitleAbout" xml:space="preserve">
+    <value>アバウト</value>
+  </data>
+  <data name="StateTitleAscan" xml:space="preserve">
+    <value>Aスキャン</value>
+  </data>
+  <data name="StateTitleCloudUpload" xml:space="preserve">
+    <value>クラウドアップロード</value>
+  </data>
+  <data name="StateTitleCommAddEdit" xml:space="preserve">
+    <value>追加または編集</value>
+  </data>
+  <data name="StateTitleCommAscan" xml:space="preserve">
+    <value>Aスキャン</value>
+  </data>
+  <data name="StateTitleCommBuildNetwork" xml:space="preserve">
+    <value>ネットワーク構築</value>
+  </data>
+  <data name="StateTitleCommCamera" xml:space="preserve">
+    <value>カメラ</value>
+  </data>
+  <data name="StateTitleCommCollectData" xml:space="preserve">
+    <value>データ収集</value>
+  </data>
+  <data name="StateTitleCommConnect" xml:space="preserve">
+    <value>DSIに接続</value>
+  </data>
+  <data name="StateTitleCommConnectAdd" xml:space="preserve">
+    <value>DSIに接続</value>
+  </data>
+  <data name="StateTitleCommConnectReplace" xml:space="preserve">
+    <value>DSIに接続</value>
+  </data>
+  <data name="StateTitleCommCopyDsi" xml:space="preserve">
+    <value>DSIをコピーしますか？</value>
+  </data>
+  <data name="StateTitleCommDsiData" xml:space="preserve">
+    <value>DSIデータ</value>
+  </data>
+  <data name="StateTitleCommDsiParams" xml:space="preserve">
+    <value>DSIパラメーター</value>
+  </data>
+  <data name="StateTitleCommDsiWarning" xml:space="preserve">
+    <value>DSI警告</value>
+  </data>
+  <data name="StateTitleCommEditGlobals" xml:space="preserve">
+    <value>グローバル編集</value>
+  </data>
+  <data name="StateTitleCommMain" xml:space="preserve">
+    <value>コミッショニング</value>
+  </data>
+  <data name="StateTitleCommMeasure" xml:space="preserve">
+    <value>ネットワークを測定しますか？</value>
+  </data>
+  <data name="StateTitleCommNew" xml:space="preserve">
+    <value>新しいネットワーク</value>
+  </data>
+  <data name="StateTitleCommNewCompany" xml:space="preserve">
+    <value>新しい企業</value>
+  </data>
+  <data name="StateTitleCommPlugin" xml:space="preserve">
+    <value>差し込む</value>
+  </data>
+  <data name="StateTitleCommProbeParams" xml:space="preserve">
+    <value>プローブのパラメーター</value>
+  </data>
+  <data name="StateTitleCommReadProgress" xml:space="preserve">
+    <value>進捗を表示</value>
+  </data>
+  <data name="StateTitleCommThickness" xml:space="preserve">
+    <value>厚さ</value>
+  </data>
+  <data name="StateTitleEmail" xml:space="preserve">
+    <value>Eメール</value>
+  </data>
+  <data name="StateTitleHome" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
+  <data name="StateTitleHookup" xml:space="preserve">
+    <value>DSIに接続</value>
+  </data>
+  <data name="StateTitleReadProgress" xml:space="preserve">
+    <value>進捗を表示</value>
+  </data>
+  <data name="StateTitleReview" xml:space="preserve">
+    <value>既存ファイルのチェック</value>
+  </data>
+  <data name="StateTitleScanNetwork" xml:space="preserve">
+    <value>ネットワークスキャン</value>
+  </data>
+  <data name="StateTitleSettings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="StateTitleSummary" xml:space="preserve">
+    <value>サマリー</value>
+  </data>
+  <data name="StateTitleThickness" xml:space="preserve">
+    <value>厚さ</value>
+  </data>
+  <data name="StateTitleUpload" xml:space="preserve">
+    <value>ファイルをアップロード</value>
+  </data>
+  <data name="ErrorCommAddrRequired" xml:space="preserve">
+    <value>アドレス欄は入力必須です。</value>
+  </data>
+  <data name="ErrorCommCityRequired" xml:space="preserve">
+    <value>都市欄は入力必須です。</value>
+  </data>
+  <data name="ErrorCommCompanyIdRequired" xml:space="preserve">
+    <value>企業ID欄は入力必須です。</value>
+  </data>
+  <data name="ErrorCommStateRequired" xml:space="preserve">
+    <value>州欄は入力必須です。</value>
+  </data>
+  <data name="ErrorCommZipRequired" xml:space="preserve">
+    <value>郵便番号欄は入力必須です。</value>
+  </data>
+  <data name="ErrorInvalidDsiModel" xml:space="preserve">
+    <value>このDSIはモデル指定が不明です。初期のModbusモデルと推測します。</value>
+  </data>
+  <data name="ErrorResetProbe" xml:space="preserve">
+    <value>現在のプローブ型式は認識されません。したがって規定値にリセットが出来ません。</value>
+  </data>
+  <data name="DsiResetFail" xml:space="preserve">
+    <value>DISはリセットが出来ません。</value>
+  </data>
+  <data name="DsiResetSuccess" xml:space="preserve">
+    <value>DSIはリセットされました。</value>
+  </data>
+  <data name="MessageReset" xml:space="preserve">
+    <value>リセットしたいDSIに装置のプラグを接続して下さい。リセットボタンをクリックして実行して下さい。</value>
+  </data>
+  <data name="StateTitleCommReset" xml:space="preserve">
+    <value>DSIリセット</value>
+  </data>
+  <data name="ButtonLoadConfig" xml:space="preserve">
+    <value>設定を読み込む</value>
+  </data>
+  <data name="ResetDsiProgress" xml:space="preserve">
+    <value>DSIリセット中…</value>
+  </data>
+  <data name="ResetNoConfig" xml:space="preserve">
+    <value>設定なし</value>
+  </data>
+  <data name="ErrorCommReadProbeFailed" xml:space="preserve">
+    <value>プローブを読込ことが出来ませんでした。</value>
+  </data>
+  <data name="CopyProbesCaption" xml:space="preserve">
+    <value>全てのプローブをコピーしますか？</value>
+  </data>
+  <data name="CopyProbesMessage" xml:space="preserve">
+    <value>全てのプローブの現在のデータを上書きしますか？</value>
+  </data>
+  <data name="CopyToProbesProgress" xml:space="preserve">
+    <value>プローブにコピー中…</value>
+  </data>
+  <data name="ErrorSaveMeasurementCsv" xml:space="preserve">
+    <value>CSVファイルに保存中にエラーが発生しました。</value>
+  </data>
+  <data name="DirMetaFilename" xml:space="preserve">
+    <value>.meta</value>
+  </data>
+  <data name="RootXmlFolderName" xml:space="preserve">
+    <value>SNI</value>
+  </data>
+  <data name="MeasurementDsiFileName" xml:space="preserve">
+    <value>alltmls.csv</value>
+  </data>
+  <data name="MeasurementProbeFileName" xml:space="preserve">
+    <value>tml{0}.csv</value>
+  </data>
+  <data name="DataLoggerCurrentShotNumber" xml:space="preserve">
+    <value>現在の読み込み数</value>
+  </data>
+  <data name="DataLoggerTotalShots" xml:space="preserve">
+    <value>データ数</value>
+  </data>
+  <data name="ButtonDisableLogging" xml:space="preserve">
+    <value>ログを無効にする。</value>
+  </data>
+  <data name="ButtonEnableLogging" xml:space="preserve">
+    <value>ログを有効にする。</value>
+  </data>
+  <data name="LoggerOnString" xml:space="preserve">
+    <value>データロガーON</value>
+  </data>
+  <data name="ErrorLoggerHasShotsMessage" xml:space="preserve">
+    <value>確認されたDSIは以前い記ロスされたデータを含むDSIです。ログインする前にこのデータを読込まなければなりません。全て読込を続けますか？</value>
+  </data>
+  <data name="ErrorLoggerHasShotsTitle" xml:space="preserve">
+    <value>DSIはログデータを含みます。</value>
+  </data>
+  <data name="ErrorLoggerReadInterrupt" xml:space="preserve">
+    <value>DSI読込中は中断出来ません。</value>
+  </data>
+  <data name="LoggerOffString" xml:space="preserve">
+    <value>データロガーOFF</value>
+  </data>
+  <data name="LoggerEnableQuestion" xml:space="preserve">
+    <value>データロガーをONにしますか？</value>
+  </data>
+  <data name="LoggerEnableCaption" xml:space="preserve">
+    <value>データロガーを有効にしますか？</value>
+  </data>
+  <data name="ErrorInvalidPassword" xml:space="preserve">
+    <value>パスワードが無効です。再入力して下さい。</value>
+  </data>
+  <data name="PasswordPrompt" xml:space="preserve">
+    <value>コミッションは管理者アクセスが必要です。管理者パスワードを入力して下さい。</value>
+  </data>
+  <data name="ErrorInvalidNewPassword" xml:space="preserve">
+    <value>パスワードは最低6文字必要です。</value>
+  </data>
+  <data name="ErrorPasswordMatch" xml:space="preserve">
+    <value>パスワードが違います。再入力して下さい。</value>
+  </data>
+  <data name="MessageErrorLoggerOpen" xml:space="preserve">
+    <value>COMポートを開ける際にエラーが発生しました。</value>
+  </data>
+  <data name="MessageErrorLoggerRead" xml:space="preserve">
+    <value>データロガー読み込み中にエラーが発生しました。</value>
+  </data>
+  <data name="MessageWaitLogger" xml:space="preserve">
+    <value>データロガーの接続を待っています…</value>
+  </data>
+  <data name="NewPasswordPrompt" xml:space="preserve">
+    <value>管理パスワードが設定されていません。新しいパスワードを入力して下さい。</value>
+  </data>
+  <data name="NewPasswordSecondPrompt" xml:space="preserve">
+    <value>パスワードを再入力して下さい。</value>
+  </data>
+  <data name="PasswordFilename" xml:space="preserve">
+    <value>sensor.dat</value>
+  </data>
+  <data name="ProgressReadLogger" xml:space="preserve">
+    <value>ログ読込中</value>
+  </data>
+  <data name="StateTitleReadLogger" xml:space="preserve">
+    <value>データロガーの読み込み</value>
+  </data>
+  <data name="CheckingDataLoggerEnabled" xml:space="preserve">
+    <value>ログ収集が有効であることを確認しています…</value>
+  </data>
+  <data name="ReferenceVelocityTitle" xml:space="preserve">
+    <value>基準速度</value>
+  </data>
+  <data name="MaterialTempTitle" xml:space="preserve">
+    <value>材料温度</value>
+  </data>
+  <data name="DsiTempTitle" xml:space="preserve">
+    <value>DSI温度</value>
+  </data>
+  <data name="ThicknessAlarmStateTitle" xml:space="preserve">
+    <value>厚さアラーム状態</value>
+  </data>
+  <data name="ThicknessAlarmThresholdTitle" xml:space="preserve">
+    <value>厚さアラームしきい値</value>
+  </data>
+  <data name="ThicknessWarningThresholdTitle" xml:space="preserve">
+    <value>厚さ警告しきい値</value>
+  </data>
+  <data name="CompanyTitle" xml:space="preserve">
+    <value>カンパニー</value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>サイト</value>
+  </data>
+  <data name="PlantTitle" xml:space="preserve">
+    <value>プラント</value>
+  </data>
+  <data name="AssetTitle" xml:space="preserve">
+    <value>アセット</value>
+  </data>
+  <data name="CollectionPointTitle" xml:space="preserve">
+    <value>収集ポイント</value>
+  </data>
+  <data name="SerialNumberTitle" xml:space="preserve">
+    <value>シリアルナンバー</value>
+  </data>
+  <data name="ProbeNumberTitle" xml:space="preserve">
+    <value>プローブ番号</value>
+  </data>
+  <data name="TimeDateTitle" xml:space="preserve">
+    <value>時間/日付({0})</value>
+  </data>
+  <data name="ThicknessAlarmTitle" xml:space="preserve">
+    <value>厚さアラーム</value>
+  </data>
+  <data name="SystemAlarmTitle" xml:space="preserve">
+    <value>システムアラーム</value>
+  </data>
+  <data name="CollectionPointIDTitle" xml:space="preserve">
+    <value>収集ポイントID</value>
+  </data>
+  <data name="StatisticsTitle" xml:space="preserve">
+    <value>統計</value>
+  </data>
+  <data name="DescriptionTitle" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="MinimumTitle" xml:space="preserve">
+    <value>最小限</value>
+  </data>
+  <data name="MaximumTitle" xml:space="preserve">
+    <value>上限</value>
+  </data>
+  <data name="MeanTitle" xml:space="preserve">
+    <value>平均</value>
+  </data>
+  <data name="DsiCountTitle" xml:space="preserve">
+    <value>DSIの数</value>
+  </data>
+  <data name="ProbeCountTitle" xml:space="preserve">
+    <value>プローブ数</value>
+  </data>
+</root>

@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F9FE642-5993-49A9-8022-BD8D21A21FB3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DsiSim</RootNamespace>
+    <AssemblyName>DsiSim</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <UseMSBuildEngine>False</UseMSBuildEngine>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;qSimEnabled</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Commandlineparameters>sim /Users/jbagley/Documents/DsiSim1</Commandlineparameters>
+    <Externalconsole>true</Externalconsole>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;qSimEnabled</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Commandlineparameters>sim /Users/jbagley/Documents/DsiSim1</Commandlineparameters>
+    <Externalconsole>true</Externalconsole>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\TabletApp\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\DsiApi\BufferExtensions.cs">
+      <Link>DsiApi\BufferExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DateExtensions.cs">
+      <Link>DsiApi\DateExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DsiConfiguration.cs">
+      <Link>DsiApi\DsiConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DsiException.cs">
+      <Link>DsiApi\DsiException.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DsiIo.cs">
+      <Link>DsiApi\DsiIo.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\DsiNetwork.cs">
+      <Link>DsiApi\DsiNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ExceptionExtensions.cs">
+      <Link>DsiApi\ExceptionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\MeasurementParam.cs">
+      <Link>DsiApi\MeasurementParam.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ModBus.cs">
+      <Link>DsiApi\ModBus.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ModBusCommands.cs">
+      <Link>DsiApi\ModBusCommands.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ModBusNetwork.cs">
+      <Link>DsiApi\ModBusNetwork.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ModBusPacket.cs">
+      <Link>DsiApi\ModBusPacket.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\SerialPacketHandler.cs">
+      <Link>DsiApi\SerialPacketHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\ThicknessCalculator.cs">
+      <Link>DsiApi\ThicknessCalculator.cs</Link>
+    </Compile>
+    <Compile Include="..\DsiApi\Util.cs">
+      <Link>DsiApi\Util.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\AssetPlantSite.cs">
+      <Link>Model\AssetPlantSite.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\CollectionPoint.cs">
+      <Link>Model\CollectionPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Company.cs">
+      <Link>Model\Company.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\DsiInfo.cs">
+      <Link>Model\DsiInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Gate.cs">
+      <Link>Model\Gate.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Location.cs">
+      <Link>Model\Location.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\ModelEquality.cs">
+      <Link>Model\ModelEquality.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Nanosense.cs">
+      <Link>Model\Nanosense.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Probe.cs">
+      <Link>Model\Probe.cs</Link>
+    </Compile>
+    <Compile Include="..\Model\Setup.cs">
+      <Link>Model\Setup.cs</Link>
+    </Compile>
+    <Compile Include="..\Network\NanoSenseClient.cs">
+      <Link>Network\NanoSenseClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Network\ServerResponse.cs">
+      <Link>Network\ServerResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Network\Uploader.cs">
+      <Link>Network\Uploader.cs</Link>
+    </Compile>
+    <Compile Include="AscanDataSim.cs" />
+    <Compile Include="CommandLineApp.cs" />
+    <Compile Include="DsiApi\Ports.cs" />
+    <Compile Include="MockData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo1.cs" />
+    <Compile Include="DsiSim.cs" />
+    <Compile Include="SimPacketHandler.cs" />
+    <Compile Include="..\DsiApi\Ports.cs">
+      <Link>DsiApi\Ports.cs</Link>
+    </Compile>
+    <Compile Include="..\Logging\Logger.cs">
+      <Link>Logging\Logger.cs</Link>
+    </Compile>
+    <Compile Include="..\TabletApp\Utils\Extensions.cs">
+      <Link>DsiApi\Extensions.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Folder Include="Logging\" />
+  </ItemGroup>
+</Project>

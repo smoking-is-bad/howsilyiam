@@ -1,0 +1,236 @@
+<autofill>
+   <probes>
+      <!-- Save as SNI XML format, but some values don't make sense when they aren't specific to the probe. -->
+      <probe>
+         <model>Unknown Single Element</model>
+         <type>single</type>
+         <velocity>5900</velocity>
+         <nominalThickness>0</nominalThickness>
+         <minimumThickness>0</minimumThickness>
+         <warningThickness>0</warningThickness>
+         <calZeroOffset>460e-9</calZeroOffset>
+         <setups>
+            <setup num="1">
+               <pulserWidth>3</pulserWidth>
+               <gain>600</gain>
+               <muxSwitchSettings>128</muxSwitchSettings>
+               <switchSettings>4106</switchSettings>
+               <ascanStart>10</ascanStart>
+               <gates>
+                        <gate num="1">
+                           <start>68</start>
+                           <width>678</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="3">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                  <!-- Repeated for each gate. -->
+               </gates>
+            </setup>
+            <!-- Repeated for each setup. -->
+         </setups>
+      </probe>
+      <probe>
+         <model>XD-101</model>
+         <type>single</type>
+         <velocity>5900</velocity>
+         <nominalThickness>0.025</nominalThickness>
+         <minimumThickness>0.010</minimumThickness>
+         <warningThickness>0.0175</warningThickness>
+         <calZeroOffset>460e-9</calZeroOffset>
+         <setups>
+            <setup num="1">
+               <pulserWidth>3</pulserWidth>
+               <gain>600</gain>
+               <muxSwitchSettings>128</muxSwitchSettings>
+               <switchSettings>4106</switchSettings>
+               <ascanStart>10</ascanStart>
+               <gates>
+                        <gate num="1">
+                           <start>68</start>
+                           <width>678</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="3">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                  <!-- Repeated for each gate. -->
+               </gates>
+            </setup>
+            <!-- Repeated for each setup. -->
+         </setups>
+      </probe>
+      <probe>
+         <model>XD-301</model>
+         <type>dual</type>
+         <velocity>5900</velocity>
+         <nominalThickness>0.025</nominalThickness>
+         <minimumThickness>0.010</minimumThickness>
+         <warningThickness>0.0175</warningThickness>
+         <calZeroOffset>7.42e-6</calZeroOffset>
+         <setups>
+            <setup num="1">
+               <pulserWidth>3</pulserWidth>
+               <gain>650</gain>
+               <muxSwitchSettings>192</muxSwitchSettings>
+               <switchSettings>4105</switchSettings>
+               <ascanStart>10</ascanStart>
+               <gates>
+                        <gate num="1">
+                           <start>350</start>
+                           <width>1356</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="3">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                  <!-- Repeated for each gate. -->
+               </gates>
+            </setup>
+            <!-- Repeated for each setup. -->
+         </setups>
+      </probe>
+      <probe>
+         <model>XD-201</model>
+         <type>single</type>
+         <velocity>5900</velocity>
+         <nominalThickness>0.025</nominalThickness>
+         <minimumThickness>0.010</minimumThickness>
+         <warningThickness>0.0175</warningThickness>
+         <calZeroOffset>1e-9</calZeroOffset>
+         <setups>
+            <setup num="1">
+               <pulserWidth>3</pulserWidth>
+               <gain>600</gain>
+               <muxSwitchSettings>128</muxSwitchSettings>
+               <switchSettings>4106</switchSettings>
+               <ascanStart>10</ascanStart>
+               <gates>
+                        <gate num="1">
+                           <start>260</start>
+                           <width>271</width>
+                           <threshold>-10000</threshold>
+                           <mode>32769</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>27</start>
+                           <width>271</width>
+                           <threshold>-7000</threshold>
+                           <mode>1</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="3">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                  <!-- Repeated for each gate. -->
+               </gates>
+            </setup>
+            <!-- Repeated for each setup. -->
+         </setups>
+      </probe>
+      <probe>
+         <model>SNI_S001</model>  <!-- A dummy probe model used during testing -->
+         <type>dual</type>
+         <velocity>5900</velocity>
+         <nominalThickness>0.025</nominalThickness>
+         <minimumThickness>0.010</minimumThickness>
+         <warningThickness>0.0175</warningThickness>
+         <calZeroOffset>7.42e-6</calZeroOffset>
+         <setups>
+            <setup num="1">
+               <pulserWidth>3</pulserWidth>
+               <gain>650</gain>
+               <muxSwitchSettings>192</muxSwitchSettings>
+               <switchSettings>4105</switchSettings>
+               <ascanStart>10</ascanStart>
+               <gates>
+                        <gate num="1">
+                           <start>350</start>
+                           <width>1356</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="3">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                  <!-- Repeated for each gate. -->
+               </gates>
+            </setup>
+            <!-- Repeated for each setup. -->
+         </setups>
+      </probe>
+   </probes>
+</autofill>
+   

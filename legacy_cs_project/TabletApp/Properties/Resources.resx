@@ -1,0 +1,955 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="delete_file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\x2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hamburger_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hamburger-on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectFilesForReviewPrompt" xml:space="preserve">
+    <value>Select the file(s) for review.</value>
+  </data>
+  <data name="SelectFilesForUploadPrompt" xml:space="preserve">
+    <value>Select the file(s) for upload.</value>
+  </data>
+  <data name="dsi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dsi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dsi_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dsi_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dsi_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dsi_blank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dsi_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dsi_error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sensor_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensor_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sensor_inactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensor_inactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ascanwaveform" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ascanwaveform.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProbeNumber" xml:space="preserve">
+    <value>Probe #{0}</value>
+  </data>
+  <data name="ErrorCaption" xml:space="preserve">
+    <value>smartPIMS Error</value>
+  </data>
+  <data name="ErrorScannedCounts" xml:space="preserve">
+    <value>The scanned number of DSIs does not match the number of populated DSIs.</value>
+  </data>
+  <data name="ErrorScanNetwork" xml:space="preserve">
+    <value>Error while scanning the DSI network.</value>
+  </data>
+  <data name="ErrorScanNetworkTimeout" xml:space="preserve">
+    <value>Timeout occurred while scanning the DSI network.</value>
+  </data>
+  <data name="ErrorUnhandledException" xml:space="preserve">
+    <value>An unhandled exception has occured.  Please restart the application.</value>
+  </data>
+  <data name="ErrorReadProbes" xml:space="preserve">
+    <value>Error while performing the thickness measurements.</value>
+  </data>
+  <data name="ErrorReadProbesTimeout" xml:space="preserve">
+    <value>Timeout occurred while performing the thickness measurements.</value>
+  </data>
+  <data name="ReadProgressDsiString" xml:space="preserve">
+    <value>Reading DSI {0} / {1}</value>
+  </data>
+  <data name="dsi_warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\dsi_warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CancelCaption" xml:space="preserve">
+    <value>Cancel current operation?</value>
+  </data>
+  <data name="CancelMessage" xml:space="preserve">
+    <value>Are you sure you want to cancel the current operation?</value>
+  </data>
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="commissioning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\commissioning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuitCaption" xml:space="preserve">
+    <value>Quit application?</value>
+  </data>
+  <data name="QuitMessage" xml:space="preserve">
+    <value>Are you sure you want to quit the application?</value>
+  </data>
+  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sidebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sidebar_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sidebar-active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_button_big" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue_button_big.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_button_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue_button_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="camera_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\camera-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloud_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cloud-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dsi_error_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dsi_error_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dsi_warning_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dsi_warning_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="email_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\email-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gray_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gray_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="header_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\header-bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="select_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\select-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sensor_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensor-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upload_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upload-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErrorLoginTimeout" xml:space="preserve">
+    <value>Timeout occurred while logging in.</value>
+  </data>
+  <data name="ErrorLogoutTimeout" xml:space="preserve">
+    <value>Timeout occurred while logging out.</value>
+  </data>
+  <data name="ErrorNoDsisFound" xml:space="preserve">
+    <value>No DSIs could be found on the network.</value>
+  </data>
+  <data name="ErrorSave" xml:space="preserve">
+    <value>An error occured while saving.</value>
+  </data>
+  <data name="ErrorUpload" xml:space="preserve">
+    <value>An error occured while uploading.</value>
+  </data>
+  <data name="ErrorUploadTimeout" xml:space="preserve">
+    <value>Timeout occurred while uploading.</value>
+  </data>
+  <data name="RootXmlFolderName_Legacy" xml:space="preserve">
+    <value>SensorNetworks</value>
+  </data>
+  <data name="UploadProgressString" xml:space="preserve">
+    <value>Uploading file {0} / {1}</value>
+  </data>
+  <data name="sensor_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensor_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sensor_red_inactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensor_red_inactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sensor_yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensor_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sensor_yellow_inactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sensor_yellow_inactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UploadComplete" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="upload_fail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upload_fail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upload_success" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upload_success.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DirMappingFilename" xml:space="preserve">
+    <value>.contents</value>
+  </data>
+  <data name="hookup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hookup.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErrorScannedCounts2" xml:space="preserve">
+    <value>The scanned number of DSIs does not match the returned number of DSIs.</value>
+  </data>
+  <data name="ErrorMaxReviewFilenames" xml:space="preserve">
+    <value>Max files exceeded.  Only the first {0} will be taken.</value>
+  </data>
+  <data name="SummaryCsvFilename" xml:space="preserve">
+    <value>summary.csv</value>
+  </data>
+  <data name="ErrorNoEmailSettings" xml:space="preserve">
+    <value>Email settings have not been set.  Please go to Settings and enter your settings.</value>
+  </data>
+  <data name="ErrorSendEmail" xml:space="preserve">
+    <value>Error while sending the email message.</value>
+  </data>
+  <data name="ErrorSendEmailTimeout" xml:space="preserve">
+    <value>Timeout occurred while sending the email message.</value>
+  </data>
+  <data name="ErrorEmailFromMissing" xml:space="preserve">
+    <value>The From field is a required field.</value>
+  </data>
+  <data name="ErrorEmailToMissing" xml:space="preserve">
+    <value>The To field is a required field.</value>
+  </data>
+  <data name="ErrorSaveSummary" xml:space="preserve">
+    <value>Error while saving the summary file.</value>
+  </data>
+  <data name="ErrorSaveXml" xml:space="preserve">
+    <value>Error while saving the DSI XML.</value>
+  </data>
+  <data name="EmailDefaultMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmailDefaultSubject" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmailProgressFail" xml:space="preserve">
+    <value>The email could not be sent</value>
+  </data>
+  <data name="EmailProgressSending" xml:space="preserve">
+    <value>Sending email...</value>
+  </data>
+  <data name="EmailProgressSuccess" xml:space="preserve">
+    <value>Email was successfully sent</value>
+  </data>
+  <data name="keyboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScanProgress" xml:space="preserve">
+    <value>Scanning network...</value>
+  </data>
+  <data name="spinner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spinner.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AutoReadUploadProgress" xml:space="preserve">
+    <value>Uploading...</value>
+  </data>
+  <data name="ReadProgressWaiting" xml:space="preserve">
+    <value>Waiting...</value>
+  </data>
+  <data name="AutoReadCancelCaption" xml:space="preserve">
+    <value>Stop auto-read?</value>
+  </data>
+  <data name="AutoReadCancelMessage" xml:space="preserve">
+    <value>Are you sure you'd like to stop the current auto-read session?</value>
+  </data>
+  <data name="InitializeNetworkProgress" xml:space="preserve">
+    <value>Initializing network...</value>
+  </data>
+  <data name="CommissioningConfirmMessage" xml:space="preserve">
+    <value>Are you sure want to go into commissiong mode?  This mode will modify the DSIs on the network.</value>
+  </data>
+  <data name="ErrorCommissioningUserNotAdmin" xml:space="preserve">
+    <value>You must have administrator rights on this device in order to commission a DSI.</value>
+  </data>
+  <data name="ErrorNoLocation" xml:space="preserve">
+    <value>Could not get your current location.</value>
+  </data>
+  <data name="GeneralMessageCaption" xml:space="preserve">
+    <value>smartPIMS</value>
+  </data>
+  <data name="GetLocationProgress" xml:space="preserve">
+    <value>Getting current location...</value>
+  </data>
+  <data name="CheckAdminProgressString" xml:space="preserve">
+    <value>Checking admin privileges...</value>
+  </data>
+  <data name="AutoFillCompanyFilename" xml:space="preserve">
+    <value>Company.xml</value>
+  </data>
+  <data name="AutoFillProbeFilename" xml:space="preserve">
+    <value>Probe.xml</value>
+  </data>
+  <data name="ErrorCommCompanyNameRequired" xml:space="preserve">
+    <value>Company name is a required field.</value>
+  </data>
+  <data name="ErrorCommCompanyRequired" xml:space="preserve">
+    <value>Company is a required field.</value>
+  </data>
+  <data name="ErrorCommNumDsisRequired" xml:space="preserve">
+    <value>Number of DSIs is a required field.</value>
+  </data>
+  <data name="ErrorCommSitePlantAssetRequired" xml:space="preserve">
+    <value>At least one of site, plant or asset is required.</value>
+  </data>
+  <data name="RootDataFolderName" xml:space="preserve">
+    <value>SensorNetworks</value>
+  </data>
+  <data name="ErrorCommCollectionPointLocationRequired" xml:space="preserve">
+    <value>Collection point location is required.</value>
+  </data>
+  <data name="ErrorCommCollectionPointNameRequired" xml:space="preserve">
+    <value>Collection point name is required.</value>
+  </data>
+  <data name="ErrorCommNumDsis" xml:space="preserve">
+    <value>Maximum number of DSIs is 32.</value>
+  </data>
+  <data name="SetupTabTitle" xml:space="preserve">
+    <value>Setup {0}</value>
+  </data>
+  <data name="shutter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shutter.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>smartPIMS</value>
+  </data>
+  <data name="LogFilename" xml:space="preserve">
+    <value>log.txt</value>
+  </data>
+  <data name="ErrorCommDsiNotFound" xml:space="preserve">
+    <value>A DSI could not be found.  Would you like to scan again?</value>
+  </data>
+  <data name="ErrorCommReadDsiAndProbes" xml:space="preserve">
+    <value>An error occurred while reading the DSI and probe data.</value>
+  </data>
+  <data name="ErrorCommSetAddress" xml:space="preserve">
+    <value>An error was encountered while setting the DSI address.</value>
+  </data>
+  <data name="ErrorCommSetAddressRead" xml:space="preserve">
+    <value>The DSI could not be read using the new address {0}.</value>
+  </data>
+  <data name="ErrorCommWriteDsiInfoException" xml:space="preserve">
+    <value>An error occurred while writing the DSI info.</value>
+  </data>
+  <data name="ErrorCommWriteDsiInfoFailed" xml:space="preserve">
+    <value>The information failed to write to the DSI.  Please check the logs.</value>
+  </data>
+  <data name="ConnectDsiProgress" xml:space="preserve">
+    <value>Looking for DSI...</value>
+  </data>
+  <data name="ErrorCommWriteProbeDataException" xml:space="preserve">
+    <value>Exception while writing the probe data.</value>
+  </data>
+  <data name="ErrorCommWriteProbeDataFailed" xml:space="preserve">
+    <value>The probe data failed to be written.  Please check the logs.</value>
+  </data>
+  <data name="ErrorCameraNotFound" xml:space="preserve">
+    <value>A camera could not be found.</value>
+  </data>
+  <data name="PerformMeasurementProgress" xml:space="preserve">
+    <value>Performing measurement...</value>
+  </data>
+  <data name="blue_button_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue_button_down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_button_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue_button_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BuildNetworkCancelCaption" xml:space="preserve">
+    <value>Cancel commissioning?</value>
+  </data>
+  <data name="BuildNetworkCancelMessage" xml:space="preserve">
+    <value>Are you sure you want to cancel the commissioning process now?</value>
+  </data>
+  <data name="ConnectStringCaption" xml:space="preserve">
+    <value>String connected?</value>
+  </data>
+  <data name="ConnectStringMessage" xml:space="preserve">
+    <value>Please make sure the string is fully connected.  Proceed?</value>
+  </data>
+  <data name="ErrorVelocityParams" xml:space="preserve">
+    <value>Invalid Gate settings.  Please adjust all active Gates to start and end within the viewable Ascan range.</value>
+  </data>
+  <data name="DefaultLanguage" xml:space="preserve">
+    <value>Default (English)</value>
+  </data>
+  <data name="ErrorWriteGlobalInfo" xml:space="preserve">
+    <value>Error writing global info.  Please check the logs.</value>
+  </data>
+  <data name="ButtonAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="ButtonBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ButtonCamera" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ButtonCloud" xml:space="preserve">
+    <value>Cloud</value>
+  </data>
+  <data name="ButtonCopy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="ButtonDone" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="ButtonEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ButtonEditGlobals" xml:space="preserve">
+    <value>Edit Globals</value>
+  </data>
+  <data name="ButtonEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ButtonKeyboard" xml:space="preserve">
+    <value>Keyboard</value>
+  </data>
+  <data name="ButtonNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="ButtonNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ButtonOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ButtonPrevious" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="ButtonReadAll" xml:space="preserve">
+    <value>Read All</value>
+  </data>
+  <data name="ButtonReadSelected" xml:space="preserve">
+    <value>Read Selected</value>
+  </data>
+  <data name="ButtonReplace" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="ButtonRescan" xml:space="preserve">
+    <value>Re-scan</value>
+  </data>
+  <data name="ButtonReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ButtonResetAddress" xml:space="preserve">
+    <value>Reset Address</value>
+  </data>
+  <data name="ButtonReview" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="ButtonSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ButtonScratch" xml:space="preserve">
+    <value>Scratch</value>
+  </data>
+  <data name="ButtonSend" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="ButtonStart" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="ButtonUpload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="ButtonViewAscan" xml:space="preserve">
+    <value>View AScan</value>
+  </data>
+  <data name="ButtonViewSummary" xml:space="preserve">
+    <value>View Summary</value>
+  </data>
+  <data name="ButtonViewThickness" xml:space="preserve">
+    <value>View Thickness</value>
+  </data>
+  <data name="ButtonYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="CancelDsiCaption" xml:space="preserve">
+    <value>Cancel commissioning?</value>
+  </data>
+  <data name="CancelDsiDataMessage" xml:space="preserve">
+    <value>Are you sure you want to cancel the commissioning?  All data will be lost and the DSI will be reset to factory default settings.</value>
+  </data>
+  <data name="DefaultWebUrl" xml:space="preserve">
+    <value>https://www.smartpims.com</value>
+  </data>
+  <data name="ErrorOnlyFactoryDsiFound" xml:space="preserve">
+    <value>Only uncommissioned DSIs were found on the network.  Please commission the DSIs first.</value>
+  </data>
+  <data name="MessageCollect" xml:space="preserve">
+    <value>Would you like to collect ultrasonic data from the DSI and probes at this time?</value>
+  </data>
+  <data name="MessageCopyScratch" xml:space="preserve">
+    <value>Do you want to copy from the old DSI or start from scratch?</value>
+  </data>
+  <data name="MessageMeasure" xml:space="preserve">
+    <value>Would you like to measure the entire DSI network or would you like to finish commissioning without an initial measurement?</value>
+  </data>
+  <data name="MessagePlug" xml:space="preserve">
+    <value>Plug your device into the DSI that you would like to add to the network and click OK.</value>
+  </data>
+  <data name="MessagePlugAdd" xml:space="preserve">
+    <value>Plug your new DSI into the network.  DO NOT disconnect any existing DSIs.</value>
+  </data>
+  <data name="MessagePlugAddEditReplace" xml:space="preserve">
+    <value>Please plug into the complete string of DSIs.  Plugging into an individual DSI is acceptable if ONLY ultrasonic parameters are edited.</value>
+  </data>
+  <data name="MessagePlugReplace" xml:space="preserve">
+    <value>Plug your new DSI into the network.  Be sure to remove the target DSI before connecting the replacement, but leave other DSIs connected.</value>
+  </data>
+  <data name="MessageWarning" xml:space="preserve">
+    <value>Warning: The DSI address will be changed to {0} and all existing information will be erased or overwritten. Click OK to continue.</value>
+  </data>
+  <data name="MessageWarningReset" xml:space="preserve">
+    <value>Click Reset Address to reset the DSI to the factory address and return home.</value>
+  </data>
+  <data name="StateTitleAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="StateTitleAscan" xml:space="preserve">
+    <value>AScan</value>
+  </data>
+  <data name="StateTitleCloudUpload" xml:space="preserve">
+    <value>Cloud Upload</value>
+  </data>
+  <data name="StateTitleCommAddEdit" xml:space="preserve">
+    <value>Add or Edit</value>
+  </data>
+  <data name="StateTitleCommAscan" xml:space="preserve">
+    <value>AScan</value>
+  </data>
+  <data name="StateTitleCommBuildNetwork" xml:space="preserve">
+    <value>Build Network</value>
+  </data>
+  <data name="StateTitleCommCamera" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+  <data name="StateTitleCommCollectData" xml:space="preserve">
+    <value>Collect Data</value>
+  </data>
+  <data name="StateTitleCommConnect" xml:space="preserve">
+    <value>Connect DSI</value>
+  </data>
+  <data name="StateTitleCommConnectAdd" xml:space="preserve">
+    <value>Connect DSI</value>
+  </data>
+  <data name="StateTitleCommConnectReplace" xml:space="preserve">
+    <value>Connect DSI</value>
+  </data>
+  <data name="StateTitleCommCopyDsi" xml:space="preserve">
+    <value>Copy DSI?</value>
+  </data>
+  <data name="StateTitleCommDsiData" xml:space="preserve">
+    <value>DSI Data</value>
+  </data>
+  <data name="StateTitleCommDsiParams" xml:space="preserve">
+    <value>DSI Params</value>
+  </data>
+  <data name="StateTitleCommDsiWarning" xml:space="preserve">
+    <value>DSI Warning</value>
+  </data>
+  <data name="StateTitleCommEditGlobals" xml:space="preserve">
+    <value>Edit Globals</value>
+  </data>
+  <data name="StateTitleCommMain" xml:space="preserve">
+    <value>Commissioning</value>
+  </data>
+  <data name="StateTitleCommMeasure" xml:space="preserve">
+    <value>Measure Network?</value>
+  </data>
+  <data name="StateTitleCommNew" xml:space="preserve">
+    <value>New Network</value>
+  </data>
+  <data name="StateTitleCommNewCompany" xml:space="preserve">
+    <value>New Company</value>
+  </data>
+  <data name="StateTitleCommPlugin" xml:space="preserve">
+    <value>Plug in</value>
+  </data>
+  <data name="StateTitleCommProbeParams" xml:space="preserve">
+    <value>Probe Params</value>
+  </data>
+  <data name="StateTitleCommReadProgress" xml:space="preserve">
+    <value>Read Progress</value>
+  </data>
+  <data name="StateTitleCommThickness" xml:space="preserve">
+    <value>Thickness</value>
+  </data>
+  <data name="StateTitleEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="StateTitleHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="StateTitleHookup" xml:space="preserve">
+    <value>Hook Up DSI</value>
+  </data>
+  <data name="StateTitleReadProgress" xml:space="preserve">
+    <value>Read Progress</value>
+  </data>
+  <data name="StateTitleReview" xml:space="preserve">
+    <value>Review Existing Files</value>
+  </data>
+  <data name="StateTitleScanNetwork" xml:space="preserve">
+    <value>Scan Network</value>
+  </data>
+  <data name="StateTitleSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="StateTitleSummary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="StateTitleThickness" xml:space="preserve">
+    <value>Thickness</value>
+  </data>
+  <data name="StateTitleUpload" xml:space="preserve">
+    <value>Upload Files</value>
+  </data>
+  <data name="ErrorCommAddrRequired" xml:space="preserve">
+    <value>Address is a required field.</value>
+  </data>
+  <data name="ErrorCommCityRequired" xml:space="preserve">
+    <value>City is a required field.</value>
+  </data>
+  <data name="ErrorCommCompanyIdRequired" xml:space="preserve">
+    <value>Company ID is a required field.</value>
+  </data>
+  <data name="ErrorCommStateRequired" xml:space="preserve">
+    <value>State is a required field.</value>
+  </data>
+  <data name="ErrorCommZipRequired" xml:space="preserve">
+    <value>Postal Code is a required field.</value>
+  </data>
+  <data name="ErrorInvalidDsiModel" xml:space="preserve">
+    <value>This DSI has an unknown model designator.  The 1st generation Modbus model will be assumed for this DSI.</value>
+  </data>
+  <data name="ErrorResetProbe" xml:space="preserve">
+    <value>The current probe model is unrecognized, therefore the probe cannot be reset to its defaults.</value>
+  </data>
+  <data name="DsiResetFail" xml:space="preserve">
+    <value>The DSI could not be reset.</value>
+  </data>
+  <data name="DsiResetSuccess" xml:space="preserve">
+    <value>The DSI has been successfully reset.</value>
+  </data>
+  <data name="MessageReset" xml:space="preserve">
+    <value>Plug your device into the DSI that you would like to reset.  Click the Reset button to perform the reset.</value>
+  </data>
+  <data name="StateTitleCommReset" xml:space="preserve">
+    <value>Reset DSI</value>
+  </data>
+  <data name="ButtonLoadConfig" xml:space="preserve">
+    <value>Load Config</value>
+  </data>
+  <data name="ResetDsiProgress" xml:space="preserve">
+    <value>Resetting the DSI...</value>
+  </data>
+  <data name="ResetNoConfig" xml:space="preserve">
+    <value>No config</value>
+  </data>
+  <data name="ErrorCommReadProbeFailed" xml:space="preserve">
+    <value>The probe could not be read.</value>
+  </data>
+  <data name="CopyProbesCaption" xml:space="preserve">
+    <value>Copy to all probes?</value>
+  </data>
+  <data name="CopyProbesMessage" xml:space="preserve">
+    <value>Are you sure you want to overwrite all probes with the current data?</value>
+  </data>
+  <data name="CopyToProbesProgress" xml:space="preserve">
+    <value>Copying to probes...</value>
+  </data>
+  <data name="ErrorSaveMeasurementCsv" xml:space="preserve">
+    <value>Error while saving the measurement CSV files.</value>
+  </data>
+  <data name="DirMetaFilename" xml:space="preserve">
+    <value>.meta</value>
+  </data>
+  <data name="RootXmlFolderName" xml:space="preserve">
+    <value>SNI</value>
+  </data>
+  <data name="MeasurementDsiFileName" xml:space="preserve">
+    <value>alltmls.csv</value>
+  </data>
+  <data name="MeasurementProbeFileName" xml:space="preserve">
+    <value>tml{0}.csv</value>
+  </data>
+  <data name="blue_button_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue_button_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_button_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue_button_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DataLoggerCurrentShotNumber" xml:space="preserve">
+    <value>Current Reading Number</value>
+  </data>
+  <data name="DataLoggerTotalShots" xml:space="preserve">
+    <value>Number of Readings</value>
+  </data>
+  <data name="ButtonDisableLogging" xml:space="preserve">
+    <value>Disable Logging</value>
+  </data>
+  <data name="ButtonEnableLogging" xml:space="preserve">
+    <value>Enable Logging</value>
+  </data>
+  <data name="LoggerOnString" xml:space="preserve">
+    <value>Data Logger On</value>
+  </data>
+  <data name="ErrorLoggerHasShotsMessage" xml:space="preserve">
+    <value>The found DSI is a data logger DSI that contains previously logged data.  This data must be read before entering commissioning.  Continue to “Read All”?</value>
+  </data>
+  <data name="ErrorLoggerHasShotsTitle" xml:space="preserve">
+    <value>DSI Contains Logged Data</value>
+  </data>
+  <data name="ErrorLoggerReadInterrupt" xml:space="preserve">
+    <value>The reading of a logger DSI cannot be interrupted.</value>
+  </data>
+  <data name="LoggerOffString" xml:space="preserve">
+    <value>Data Logger Off</value>
+  </data>
+  <data name="LoggerEnableQuestion" xml:space="preserve">
+    <value>Would you like to turn the data logger on?</value>
+  </data>
+  <data name="LoggerEnableCaption" xml:space="preserve">
+    <value>Enable data logger?</value>
+  </data>
+  <data name="ErrorInvalidPassword" xml:space="preserve">
+    <value>Invalid password.  Please try again.</value>
+  </data>
+  <data name="PasswordPrompt" xml:space="preserve">
+    <value>Commissioning requires administrator access.  Please enter the administrator password:</value>
+  </data>
+  <data name="ErrorInvalidNewPassword" xml:space="preserve">
+    <value>Password must be at least 6 characters.</value>
+  </data>
+  <data name="ErrorPasswordMatch" xml:space="preserve">
+    <value>Passwords do not match.  Please try again.</value>
+  </data>
+  <data name="MessageErrorLoggerOpen" xml:space="preserve">
+    <value>Error while trying to open the COM port.</value>
+  </data>
+  <data name="MessageErrorLoggerRead" xml:space="preserve">
+    <value>Error while trying to read from Data Logger.</value>
+  </data>
+  <data name="MessageWaitLogger" xml:space="preserve">
+    <value>Waiting for Data Logger to connect...</value>
+  </data>
+  <data name="NewPasswordPrompt" xml:space="preserve">
+    <value>Admin password has not been set.  Please enter a new password.</value>
+  </data>
+  <data name="NewPasswordSecondPrompt" xml:space="preserve">
+    <value>Please re-enter your password.</value>
+  </data>
+  <data name="PasswordFilename" xml:space="preserve">
+    <value>sensor.dat</value>
+  </data>
+  <data name="ProgressReadLogger" xml:space="preserve">
+    <value>Reading Logger...</value>
+  </data>
+  <data name="StateTitleReadLogger" xml:space="preserve">
+    <value>Read Data Logger</value>
+  </data>
+  <data name="CheckingDataLoggerEnabled" xml:space="preserve">
+    <value>Checking that logging is enabled...</value>
+  </data>
+  <data name="ReferenceVelocityTitle" xml:space="preserve">
+    <value>Reference Velocity</value>
+  </data>
+  <data name="MaterialTempTitle" xml:space="preserve">
+    <value>Material Temperature</value>
+  </data>
+  <data name="DsiTempTitle" xml:space="preserve">
+    <value>DSI Temperature</value>
+  </data>
+  <data name="ThicknessAlarmStateTitle" xml:space="preserve">
+    <value>Thickness Alarm State</value>
+  </data>
+  <data name="ThicknessAlarmThresholdTitle" xml:space="preserve">
+    <value>Thickness Alarm Threshold</value>
+  </data>
+  <data name="ThicknessWarningThresholdTitle" xml:space="preserve">
+    <value>Thickness Warning Threshold</value>
+  </data>
+  <data name="CompanyTitle" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="PlantTitle" xml:space="preserve">
+    <value>Plant</value>
+  </data>
+  <data name="AssetTitle" xml:space="preserve">
+    <value>Asset</value>
+  </data>
+  <data name="CollectionPointTitle" xml:space="preserve">
+    <value>Collection Point</value>
+  </data>
+  <data name="SerialNumberTitle" xml:space="preserve">
+    <value>DSI Serial #</value>
+  </data>
+  <data name="ProbeNumberTitle" xml:space="preserve">
+    <value>Probe #</value>
+  </data>
+  <data name="TimeDateTitle" xml:space="preserve">
+    <value>Time/Date ({0})</value>
+  </data>
+  <data name="ThicknessAlarmTitle" xml:space="preserve">
+    <value>Thickness Alarm</value>
+  </data>
+  <data name="SystemAlarmTitle" xml:space="preserve">
+    <value>System Alarm</value>
+  </data>
+  <data name="CollectionPointIDTitle" xml:space="preserve">
+    <value>Collection Point ID</value>
+  </data>
+  <data name="StatisticsTitle" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="DescriptionTitle" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="MinimumTitle" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="MaximumTitle" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="MeanTitle" xml:space="preserve">
+    <value>Mean</value>
+  </data>
+  <data name="DsiCountTitle" xml:space="preserve">
+    <value># of DSIs</value>
+  </data>
+  <data name="ProbeCountTitle" xml:space="preserve">
+    <value># Probes</value>
+  </data>
+</root>

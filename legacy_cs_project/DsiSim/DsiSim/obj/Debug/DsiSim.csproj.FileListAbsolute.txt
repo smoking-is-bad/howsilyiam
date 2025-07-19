@@ -1,0 +1,6 @@
+C:\cygwin64\home\Jason Bagley\dev\AL\SensorNetworks\NanoSense\TabletApp\DsiSim\DsiSim\bin\Debug\DsiSim.exe.config
+C:\cygwin64\home\Jason Bagley\dev\AL\SensorNetworks\NanoSense\TabletApp\DsiSim\DsiSim\obj\Debug\DsiSim.csprojResolveAssemblyReference.cache
+C:\cygwin64\home\Jason Bagley\dev\AL\SensorNetworks\NanoSense\TabletApp\DsiSim\DsiSim\bin\Debug\DsiSim.exe
+C:\cygwin64\home\Jason Bagley\dev\AL\SensorNetworks\NanoSense\TabletApp\DsiSim\DsiSim\bin\Debug\DsiSim.pdb
+C:\cygwin64\home\Jason Bagley\dev\AL\SensorNetworks\NanoSense\TabletApp\DsiSim\DsiSim\obj\Debug\DsiSim.exe
+C:\cygwin64\home\Jason Bagley\dev\AL\SensorNetworks\NanoSense\TabletApp\DsiSim\DsiSim\obj\Debug\DsiSim.pdb

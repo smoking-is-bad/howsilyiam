@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  version: file version 
+      testId: GUID, generated for each test, guaranteeing uniqueness.
+-->
+<nanosense version="1.0" testId="bebe1228-8351-4ff3-97ba-2ecf15412e02" testUser="Mark Feydo">
+  <company>
+    <!--
+      Companies cannot be created from an XML upload. ID field is required. All
+      other fields here are ignored by the cloud service, but should still be
+      included for portability.
+      -->
+    <id>3</id>
+    <name>Sensor Networks</name>
+    <location>
+      <address1>171-500 Technology Drive</address1>
+      <address2 />
+      <city>Boalsburg</city>
+      <state>PA</state>
+      <postalCode>16827</postalCode>
+      <country>USA</country>
+    </location>
+    <phone>1-814-466-7207</phone>
+  </company>
+  <site>Engineering Lab</site>
+  <plant></plant>
+  <asset></asset>
+  <!--
+   collectionPoint can be omitted if the DSI tag uses the ID field. It should
+   probably still be included for portability.
+   -->
+  <collectionPoint latitude="40.782169" longitude="-77.776845">
+    <!--
+      Name will be used to link it to an existing record in the database. If one
+      does not exist, it will be created from the name and other fields.
+      -->
+    <name>Test CP</name>
+    <description>Description of Test CP</description>
+  </collectionPoint>
+  <dsis>
+    <dsi address="1" latitude="40.782169" longitude="-77.776845">
+      <!--
+      Serial number is required. Will be used to find the DSI in the cloud. If
+      the record exists, all other DSI fields will be ignored. If it does not
+      exist, the fields will be used to create a DSI in the cloud.
+      -->
+      <serialNumber>5190817-0012</serialNumber>
+      <tag>2nd Gen Prototype</tag>
+      <dsiModel>Modbus</dsiModel>
+      <firmware>
+        <micro>2015-02-19</micro>
+        <fpga>10</fpga>
+      </firmware>
+      <packetVersion>1.0</packetVersion>
+      <baudRate>115200</baudRate>
+      <parity>1</parity>
+      <probes>
+        <probe num="1" latitude="23.3434" longitude="-34.341234">
+          <!--
+            Sequence number is required. Will be used to find the probe in the
+            cloud by concatenating it with the serial # (serialNumber + '-' +
+            sequenceNumber). If the record exists, the following fields will be
+            ignored. If it does not exist, the fields will be used to create a
+            probe in the cloud.
+            -->
+          <!-- Values based on Jim's sample code for thickness calculation. -->
+          <model>Single</model>
+          <type>Contact</type>
+          <description></description>
+          <nominalThickness>0.015</nominalThickness>
+          <minimumThickness>0.010</minimumThickness>
+          <velocity>5900</velocity>
+          <calZeroOffset>0</calZeroOffset>
+          <!-- enter as seconds -->
+          <setups>
+            <setup num="1">
+              <dsiTemp>25</dsiTemp>
+              <materialTemp>25</materialTemp>
+              <status>0</status>
+              <calculatedThickness>.12</calculatedThickness>
+              <timestamp>2014-02-10T20:00:00</timestamp>
+              <lastThickness>.0160770</lastThickness>
+              <lastTimestamp>2014-02-24T16:00:00</lastTimestamp>
+              <pulserWidth>3</pulserWidth>
+              <gain>550</gain>
+              <muxSwitchSettings>128</muxSwitchSettings>
+              <!-- 0x0080 Probe 1 Single Element-->
+              <switchSettings>256</switchSettings>
+              <!-- 0x1000 sets 16 averages  0x0100 sets 1 average-->
+              <ascanStart>1</ascanStart>
+              <gates>
+                <gate num="1">
+                  <start>149</start>
+                  <width>169</width>
+                  <threshold>-20000</threshold>
+                  <mode>0</mode>
+                  <tof>164</tof>
+                  <amplitude>1</amplitude>
+                </gate>
+                <gate num="2">
+                  <start>141</start>
+                  <width>0</width>
+                  <threshold>-7000</threshold>
+                  <mode>0</mode>
+                  <tof>1234</tof>
+                  <amplitude>1</amplitude>
+                </gate>
+                <gate num="3">
+                  <start>650</start>
+                  <width>0</width>
+                  <threshold>-7000</threshold>
+                  <mode>0</mode>
+                  <tof>1234</tof>
+                  <amplitude>1</amplitude>
+                </gate>
+              </gates>
+              <crossingDelayCompensation>7.9375</crossingDelayCompensation>
+              <crossings>217.437327364058,NaN,NaN</crossings>
+              <ascan>0398f4c0ff3cf490d464b4d4aa609ff08ff8857c987cd83c161c2878117810c8fbd4fc14fc5cfe1402b41a40174c216002e0afac7b6058e88a18d76048c054102ed8efcc9c747990926c93d87fa8a928eeb0416046484e1c0a5cb15c85f06a207ffc9ff0ef1423ac433446302f140064ac60803861c081f4b02800f8262037f43b3c2fdc0ee8c0c4945475808cb4a3c4dbd801481c805ab43bf4358ce7e8a6209644b510e124e2a41a6c2ef446e43ef01c3cef34d0a0c9b4d398e274f4700b60209826ac1794fd9cea2ce5c4eba8f438feb00d781c9020f813fcfcbceadce7acef0cf798fe7807b814541c6416680354eface764eb08f200f698fbb805cc116c14f40bd4fd18f4b8f6ccfca4fe54fc64fdac04e00ba409fc0084f86cf9280020046001bcfd04fd1801c8042cfff0f968f8b4ffcc07e00928038cfdd4fce4fe68fcfcf83cf5e8facc04900bdc0c2c07d403e801c0fe7cf864f2a4f280f96002b408b409cc0884071c04a8ff38f7fcf34cf478fa6000f40524073408780868054cff24f8e8f630f7bcfad0fcdcfe200008fe4cf5c0ea58ee28058c30ac2d201d40e3e0947c7efc782ca56cd3181a4438a044083ca81ce0ed34a3c887f0715482d8999ceb542f385ac855d82c38df3ca6b86f0067fc96e4c8cc12dc4080539445681e84d310a8787af8774877e0b90c045c40c07a1c441c1080c1eca3a486808d98b3b4cf000d1c37b467ac4f101fc4e684be18ac28b198cac0f1041918372842903934205c0170e5d4d478d0c4dac0eeec067019d0238021e016b00598f2b8e294d990dac4e680fa38115c26b034c4368829180e40ed7cd150c2acc510d644f0a40d0c24202f802bd01ab802f0ed3ce05cdf0ce83cf8ac0bc81c042420213414580254f158e5fce22ce5a4eeecfb9407ec0ffc11680cc004dcfcecf704f430f4fcf964003c071c0b6c0c00096c054800d4fcb4f984f828f950fc900084039c050804d80350008cfd0cf9f4f8acf9e0fd0800b403ac05500568041801dcff98fe7cff7c02440544068c04c0ffccf8c4f1b8ed1ced0cf28cfcb408c0130018501748105c05a8fa20f104ece0ee84f4e4fddc06b40a3805f8fd04fb7000f8142c016cfe78d61cbad08de88d40bfacef6030344f3050dc2c60f230a32c882872148690a1f8f68c375c5bd44d141a38cff0a7547f9c8098a84cca7410383d0c6d3c57c02b68eeccbc68a0a4a4bcc594f53821103c68435837ac1e18fdcce014ce54cdc0dc80f2f0087817a01e841d0813cc0518f59ceb04e8c8ee7cf8b403980c7811b812300d8404fcfba8f4d4f260f408f858fdc8031006e4081c064401fcfcbcf800f4e8f488f81c005c0c0c173c1cb818b00b14f81ce648db88db74e634f8a40d2c1d5424001f501154ff20eed4e574e528ed1cfa08079011901514114407c8fc20f26cedb4ef20f5e8ffe409e0109412080e0c0650fd88f658f2c0f3a4f860fef004cc07f4079c0464ffc0fb68f8c0f868fa4cfdc801cc052006cc065404200128fe58fc54fb7cfbf4fda00004025c041004fc054c051c046002dc008cfde8fb78f990f7e0f5a4f27cef68eeb8f318fdb80cfc1cc427f82a7c22c01218fcb8e884db20d7e4dec0ec70fc2c095c10ac10d40ac40168f894f35cf394fa6c09281ec832d0349c1574d9dc9ec08958ab7cf6703ebc6e2c54203164f7dcb2f09f248abc9810a334e0a416c83994578c37cc0dd0df5cbe80b1b4bca0db30022422d8350837a82ce817a0fc38e258d2ecd2f8e074f4a008c018d422ac23ec1ac808b4f36ce254daa4dd80e908fa400d6c1dbc25e0229014c40184ef68e37ce008e51cf12c011c102819781a1c12bc06c0fa38f07cebb0ed00f44cff840ae4126413940e340408f814ee08e9a0ed38f82c065c11cc15b8111406a4fb14f2a0efb8f2e4fadc04b40ca40f7c0c5404e4fc54f594f26cf338f758fd5c036c07b8092807d004a800f8fdf8fc74fc78fdb0ff8c0138021c0228016c004cff4cfea4fe70fec0ff74004000cc00c40018ff04fdf4fd48fd64fe78006c02c0049c055804a40294ffa4fc88fa38f988fabcfd4400240294044805800678070c0674037cfd84f55ceda0e99cec00f53c034812581de022601e80135403dcf3bce6acdf98e038e81cf4f403000e841500156410380774fde0f678f354f4f0fa3000e006800940093408ac0a3c0d080a40f9ccdbb8bef4b948d7240ff849f06ac8661c3f800460c8189e549404ac78df6c1ae449d85d4c51c82e58000cd420b650aee4c044e4840eac308040e03df42b440ee4f07cd894ce84d4fce8800134172824e427e01f8c0d64f5d0dfecd32cd3dce198f7fc10c0258430982e541e70052cea74d6bccf94d60ce75cfe4814b02490299022881224fe04ec78e258e1c4e9f4f7e8072012f417ec14f40ba0ff1cf350ebc0eaf4f16cfd1c09e012d014a80f3004dcf988f0dced44ef7cf678ffd808940e040ed40b4404dcfdb4f7ccf4bcf55cf990001806f80bfc0d880b24053cfd24f4f8ef30edf8f218fa80047c0cfc11a8112c0bac02dcf9bcf370f1fcf55cfba0024806f8085406080108fb60f76cf724fad8014808240cf40dfc0ab803f0fb90f414efacefacf42cfc38061c0fa41638171c10600264f0c4e1a8db58e17cf3280ae820a82ca42a341970ff80e4fcd2b4ce90d968ef3809081f682c5c2cd021440d94f7e8e6b0de68e044ea5cf8c006cc108013880fe00798fe84f8e8f9b00004061803f4f608e2ecd968e60407bc2e0c43743bf41c10f3a8d308c34cc688da98f9f41ac430fc341424540a48f0e4dfc4d9b8dea0eca0ffc811cc1c601c6813ac06e8fa98f17cececede8f4acff700a7811b012e80e300518f9e8ef78e958ea7cf36c01740fa419201ac8140806b8f6a0e8c8e1e8e49cf018004c0fa819501ab8140007a0f978edc0e804e9d4f258fea80a9c12c8155c123c0a980098f718f0e4efbcf398fad002f0096c0c440a680458fc50f558f240f438fa7c02d40a700eb40e3c093c0160f944f364f16cf39cf918003c07080bb00d3c0b88071c00fcfa6cf4c8f190f21cf6dcfee407f80f3812280fc809000020f820f35cf2d8f608fb10ffc402540218ff9cfc50fa10fa5cfda8031c08f40d140dd40ac804e8fe30f8b8f5d4f5fcf8d4fd5c02300620086c08c806d80218fa78f178ea84e988f0c4ff24102c1d8821c41aac0a80f710e768e10ce5f4f3ec05a014a81bd418e80d20fca4ed08e354e258e9f0f75c066812d41958188811400638fb10f334f0d0f4a4fda0084c0f040be4fd64e9b8dd44e2f0fb3019f02de82c6c1800fce8e798ddecdf6ce96cf9300ae418a01ce0164808bcfa30eed0e808e658eaa8f54c042812941bc81d7817ec0cf4fee0f0b0e64ce378e998f6700544112816e815680d680164f560edbced28f338fcdc06100be80d340a400448fd48f7b4f58cf780fc5401bc05b0073c0684043000e4fd48fa6cf96cfaf0fe9402f8069c085807b00484ff48f940f480f2e4f524fa94018007f40c540d5c0a9c04f8fe80f9a8f80cf98cfcb0ffb8018c01dc00ccfeb8fc54fad0fb40fdc801a0059808b00a4c09ec072801d0faacf38ceebcee58f364fd38091812f416f813540940fc54f100eae4ebe0f350fe4808b80eec0f480ab803dcfd98f9f0f990fbe0ff5802000274005cfcc4f9b0f8c0fa60fde0020805b8082808c00770052002c00094fdfcfa5cf660f408f56cfb18034c0a940d6c0a4c0278f97cf358f2dcf85801980ae810700fe00960ff58f554eea0ed74f254fbe0072c109c151813280b4cffb8f3c0eb18e874ecb0f69403340f2c17401864108c0094ee00e1fce474f6240e4c1f9c21301434019cf2a4eafce91cead8f024f95004780da011b010880c38066cffc8f910f458f41cf90800dc07f40b800a9c05f0fec0f6ecf108efccf458fd3006d80de010700e7008d40118f950f3c4f1e0f3b4f7f8fd380284075c0b380d2c0c40082801b4fa84f48cf154f1dcf674fe2406900ca00e000a88042cfd94f8dcf710f840fbc00048042805f4054802d4ffd0fd34fb74fabcfb38fcb8fec000cc029404480614079807cc05a80108fb28f618f3a4f4a4f8e4ff6806880c440ec80cfc0734ff34f774f1f4efe4f18cf674fd9c05940c84108c10580b8c0340fa00f2e4f070f3a8fb7805180d0010200d3c0598fc48f4dcf1d0f378f840fdb001a4030402200040ff0cffc402a006b00a3c0b88099c04c4fe54f860f4d8f4c0f7d4fc580004014c0050fea0fe2cffec032005e8069c050402500018ff5c0000013001c400a4fd6cf90cf5a0f528f87cfeb805d80bc00ee00e680a380330fb2cf460f094f0c0f4bcfb70033009fc0df40e0c0a740414fbfcf394ed10ec10f38c02c013cc1e081bbc0e0cfc34ee18e7a4e83ced84f62001480cfc1580179012b80954feb4f56cef3ced7cf0f4f8b801e008e00b6409400410fe30f998f7d4f9b0fe8c045c089009780744036cff7cfc58fa70fa0cfb58fde400b402bc03a003c403a4030c0128fd9cf93cf5e4f540f7e8fd3c03c0095c0c0c0a94056cfee4fa04f8e4fba0009005380784069002a0fd28f840f5e8f70cfb4800f005ec0894082c052c00e4fd08fafcfb50fda000b002b80254ff80fba4f8c8f884fb0cff7c048408a80aa009d00680019cfcacf910f7a4f888fb3cfef802e406180794068002a8fd30f830f5e8f794fcb8034008a40ae40938044cfdfcf88cf5d8f69cfa14fe9c028c050c064406dc06f8066004b001b0fd94f908f534f384f50cf9cc00a007880c4c0d5c0a1c0374fb8cf54cf360f6a0fdac05540a540ae407740208fcf0f9e0f960fae8fd44ff400038004800540134030c053006940654044400ecfd1cf9acf738f61cf6a8f8d8fc4c0048040006c0082c086007ac063803cc0008fb48f77cf76cfc5404280a480a9c04e4fcc0f680f420f4dcf71cfa64ff4405600aec0d9c0c80085802a0fc7cf6e8f354f364f788fe4004b408a8097c07e004d00134fdccfb54fa78fb44fd38ff9401bc037004680414021cfee0fb9cf9c8fa24fc5cff9c02f4057c067405440218fe3cfb98fb74fdc0011c03a403f401c8fddcf9bcf744f7e4fbf8023c08200b1c0a2005dc0058fbd8f9d8fa8cfd38006c02ac031c01b0ff38fd00fc20fcf4ff180194032002c40040fc90f99cf940fc20015c06f00ac40b64087802e8fc98f7b8f5f8f7acfbd400900418055c04840260ffe0fdb8fc54fbe8fc98fe48008802a003c4038c02280048fe98fdc0fe24ffa401bc0358037c0218ffdcfdc0fc94fcd4fe14ff74ffecfeecfd00fb78fb94fe1402a807fc0c280d680ab00448fbccf3acee80ee2cf308fba405180c340ee00cdc07a00190fcccfa74fa50fb60fc94fd78fe34ff540154042006e80844070c0330fda4f800f414f32cf5bcfb1c019407300a580a90083c045c0040fd20fbccfc44fdd0ff10fec8fd20fbc4fcd400c805bc0894079c03b8ff5cfc44fa58f8bcf7b4f8b4fcd0033809500c7c0b9006f80008f88cf2a0f078f35cfab804100c3410740fa80a3401a8f870f178ef40f2c8fafc05080d6411500f740860fe50f470edf4ed14f224fb7005e00e04118c0fec0a400294fb24f5d4f3e8f5a4f9f8fec8023003a403bc036c033c02e0021c016000b8ffbcfe80fd68fcc4fcf4fde0feecffc00004ff90fedcfeacff5800f8031404f005e4058803d00120fe38fbe0fadcfb98fd90ffa0007cff98fd78fb74faf8</ascan>
+            </setup>
+          </setups>
+        </probe>
+        <probe num="2" latitude="23.3434" longitude="-34.341234">
+          <!--
+            Sequence number is required. Will be used to find the probe in the
+            cloud by concatenating it with the serial # (serialNumber + '-' +
+            sequenceNumber). If the record exists, the following fields will be
+            ignored. If it does not exist, the fields will be used to create a
+            probe in the cloud.
+            -->
+          <!-- Values based on Jim's sample code for thickness calculation. -->
+          <model>Single</model>
+          <type>Vertical</type>
+          <description></description>
+          <nominalThickness>0.015</nominalThickness>
+          <minimumThickness>0.010</minimumThickness>
+          <velocity>5900</velocity>
+          <calZeroOffset>720e-9</calZeroOffset>
+          <!-- enter as seconds -->
+          <setups>
+            <setup num="1">
+              <dsiTemp>25</dsiTemp>
+              <materialTemp>25</materialTemp>
+              <status>0</status>
+              <calculatedThickness>.12</calculatedThickness>
+              <timestamp>2014-02-10T20:00:00</timestamp>
+              <lastThickness>.0160770</lastThickness>
+              <lastTimestamp>2014-02-24T16:00:00</lastTimestamp>
+              <pulserWidth>3</pulserWidth>
+              <gain>500</gain>
+              <muxSwitchSettings>64</muxSwitchSettings>
+              <!-- 0x0040 Probe 2 Single Element-->
+              <switchSettings>256</switchSettings>
+              <!-- 0x1000 sets 16 averages  0x0100 sets 1 average-->
+              <ascanStart>1</ascanStart>
+              <gates>
+                <gate num="1">
+                  <start>150</start>
+                  <width>500</width>
+                  <threshold>-20000</threshold>
+                  <mode>0</mode>
+                  <tof>1234</tof>
+                  <amplitude>1</amplitude>
+                </gate>
+                <gate num="2">
+                  <start>150</start>
+                  <width>0</width>
+                  <threshold>-7000</threshold>
+                  <mode>0</mode>
+                  <tof>1234</tof>
+                  <amplitude>1</amplitude>
+                </gate>
+                <gate num="3">
+                  <start>50</start>
+                  <width>0</width>
+                  <threshold>-7000</threshold>
+                  <mode>0</mode>
+                  <tof>1234</tof>
+                  <amplitude>1</amplitude>
+                </gate>
+              </gates>
+              <crossingDelayCompensation>7.9375</crossingDelayCompensation>
+              <crossings>306.15743786711,NaN,NaN</crossings>
+              <ascan>03dcf4d8ff28f46cd450b4d0aa609fec8fe884e096e0d5f01424272410b01024fc5012241190226c0930c9388e8c7ed4977c9a7cb1b8b078b218aeb4cb7cc7f4bf80b484b25cc2e0e3c8204420b40d5cf970fb48049c0414f5b8e694e414ef440098101818c418680fa80298f788f368f648fbf8ffd00034fee0fe9c0070032004b0042c02400040ff30ff20ff78ff88fef8fde4fd08fd4cff2001f4044804ac02c8ffacfd28fc98fe0c00640218023000acfe78fcccfca0fe2c00c40324040002e40078fe20fd10fda4ff500124024c025c0164ffe4fe84fdd4fdf4feacff94006000f4015801700128009cfffcff84ff48ff34ff2cff2cff38ff5cff98fffc0088013c01f0024801d40084fed4fd84fd34fdf4ff5c00c00190019c00f8fff8ff08fe7cfea4ff9400e801f402200150001cff68ff900024004cff64fda0fc0cfbf4fe1001ec05c00760058000c4fb88f880f93cfd34024005cc064003b0ffacfc38fae0fc10ff14028c04e8050402bcfef0fb54f984fa38fd0000b404080610065c04e40204fe70fb44f99cfa18fc84fff4031404e004ec037c0148ff04fd44fc64fc80fd70fef400bc026c039403b402900068fe04fc58fc18fd54ff8001c0032c034402080014fe50fd78fdc0fee40054017801ec01800064ff18fe30fe20feec002c015001e001a800d0ffc4fefcfec4ff18ffa0fff0ffe8ffc4ffec007c0120015000c8ffb0fea0fe30febc00040164021801b00060fed4fdd8fddcfec800180108012c00a00028009c01f8037804d807340a2408d4fb5cde44bfbcb648d7d4163c588c55a84358f8b4b77c73386c30a874e7583ef43f8050c00510c37c791472d8ae2cedd040f05e3464101748c2dc8ea49768c9f004ac2ca438702d78165cfd28eb94e6b4ed6cf97403dc0848068801b4fdc0fd3c000c03c00580040c0048fc68fa80fb44fdd800b0027c02c801cc0028fe90fda8fdecff6801c00418056c04d00200fda4f944f6bcf748fb0000b0065409e80a1006b40124fb9cf85cf880fb80ffa802f8044403a001e80030ff20fec8feb4fe74fdd4fd24fd28fe7000f403d005c005dc040000e4fd9cfb50faa8fbb0fdccfff8018c02500280025801d400d8ff84fe54fdc8fe30ff50008c014001180050ff88ff40ff9400240078006c003c0044008c00d00098ffb4fe80fdb8fe04ff70015802a8028400dcfe7cfca8fc8cfe8001b4049c05c0045c00d8fc9cf978f8c0fad0fec80318061406cc052401ecfe68fbc8fb00fc34febc015002a4021c0034fe20fd40fe5000f403d8056c04b401b8fdacfa20f884f984fce0017405a007e007600450ffd8fbb0f95cf994fbf4ff580274045c04b403900170ff10fd28fc50fcacfe08ffe00190028c029001dc00dcffe8ff0cfe58fdf4fe20fef80044019c029002cc02200094fe84fca4fbc4fc68fe68010c03600498045002b00034fdacfbf8fb9cfcacfea800cc025802f802cc02180110ffd4fe9cfdc4fda4fe4cff7800a0016001800118007cfffcffc0ffc0ffccffc0ff84ff2cfee0fed4ff24ffbc007c0160027803b404e0058c04dc017cfa3cefa4e5a4e338eea0085c27ec3d0438cc1874e990c48cbce8d3a0f81c15dc21201ba00fe80778053c056401d0f7f0eb70e43ce900fa2c10e0222824e016a4fd68e4c4d83cdd48f0d809701c3421f419e008ecf6dcead0e86ceefcfa7405a40c700d3c09340324fdf4fb64fb70fce4fe58ff1cff5cffc000b8020002bc02240048fe04fc88fca4fe64010c038804cc04400210ff1cfc74fafcfb10fc7cfecc015403680480044802d800acfe84fd04fc98fd4cfebc005801a0024c02440198007cff2cfe08fd74fda8fe88ffc8010c01f0023801d400fc0010ff74ff40ff5cffa0ffec0004ffccff50fee0fee0ff7c00800160019c01180018ff20feb8ff08ffe800e0016401180014fef4fe68fec4ffc400c0012400c80014ff88ff70ffc400300070007000540030fffcff94fef0fe54fe30fef800b402c0041803c00178fe1cfb3cfa40fbd4ff7403880634061c0338feecfb40f9e4fb44fe7001d403f4041402740010fe08fd38fde0ff7c01400244021800d8ff28fddcfd90fe60fff0018c027c02540128ff90fe40fdbcfe24ff2000440124018c0180013000acfffcff28fe58fde8fe24ff14005c017c0218020801640078ff9cff00feb0fe9cfebcff18ffb0006c01180178016400d8fff8ff20feacfec8ff60001c00a400d000b00074003c0004ffd8ffb4ff94ff78ff50ff2cff2cff70001400f801d8024001f000e0ff58fdd8fcf4fd18fe50003001f802fc02e001c4002cfe90fd60fcf0fd70fed800e002f4047404e0040001c4fe4cf9f0f5d4f414f6f0ff0c09e4123813200b68feecf450f098f3f4fa3cfed400300070029007380bb00bec05e4fb9cf238eef0f3c4fe44090c0ed40d5c0650fdecf858f774fa48fe14007400bc000c0008017c03bc0534049801c0fdc8fa6cf934faa4fe1001f804d405a00448019cfed0fcf4fc90fd70fef0004c010c0130010000c00084002cffa8ff20fed8ff1cfffc012001f401fc0110ff8cfe00fd1cfd40fe6000000180025c027401e800f4fff8ff38feccfeb0fed4ff18ff78fff0007000e40134013400c0ffd4fec4fe00fde4fea4001801c002e802e80198ff88fda8fcd8fd80ff6001a00338035801d8ff58fd04fbe0fc68fe6000f4031003e003240148ff2cfda4fd38fe04ffa4014c023001dc0090ff0cfe20fe2cfefc000400d00128011800cc006cfff8ff94ff54ff44ff68ffac000c006800980078002cffe8ffccffe0fffcfffcffdcffa4ff70ff7cffd400740118016401180040ff18fe28fde8fe98fff80164021401bc00b8ffacff10fefcff44ffa4fff800240024fffcffe0fff8005c00c800e8008cffccff10feb4fed0ff50000800c8015c018801280058ff58fe8cfe48feb4ff94007800f800f800a0003800040014003c00440018ffc0ff64ff1cff04ff30ffac005800fc015001240084ffb8ff28ff10ff700004006c00780034ffdcffa4ffacffec003c006c0054ffecff70ff2cff58ffe80098010c01100090ffc8ff0cfeb0fee4ff9c0090016001ac01480050ff1cfe24fdd8fe6cffa80118023402a80250011cff1cfcd0fb44fb98fe1801cc04cc058c03ec0130ff10fe54fe64fe0cfce4fbd0fc54ff200338065c06840374fed0fb24fa3cfc20ff6802480388030c01980024ff4cff10fef4fe98fe2cfe38ff3000dc0270030802480098feccfdb0fdb4fea8fff400e8011800a8001cffd8fffc0048006c0040ffccff44fef8ff18ffac008c0150019c013c0040ff24fe6cfe64ff00ffe800c00138013000acfff4ff64ff30ff48ff70ff90ffb4fff8005800b400ec00e4009c0020ff98ff30ff10ff48ffc4005c00c000c40064ffdcff74ff54ff70ffacffec0030006c00840070004800240008ffe0ffacff7cff68ff7cffd800700110015c00f0ffe0fea8fde8fe18ff3000a801cc02180180006cff5cfea8fe88fef8ffd000b8014001280084ff9cfedcfe98feecffc400cc0184019c00fcffe0febcfe1cfe50ff5c00c001cc0200014c0010fee0fe3cfe50ff0c001c011401900158009cffb4ff04fec8ff00ff840020009c00d800cc0078fffcff8cff58ff80fff0005c00680014ffa4ff6cff98fff40040006c00840080006c0034ffc8ff60ff38ff64ffcc0048009c00a40058ffe8ff90ff7cffb0fff0001c003000280004ffd4ffc4ffe4002c006000640034fff0ffc8ffb8ffc8ffec00100010ffecffc4ffbcfff000300050004c00480054004c0028ffe8ffa0ff6cff4cff50ff84ffe4005800a000a40070002c0000fff4fffcfff4ffd4ffa8ff80ff98fff0005c00a800b0006cfff8ff80ff40ff5cffbc00200054005c0050005000500038fffcffa8ff40ff00ff20ffbc0088010000d4003cffe0002800dc014c00d8ff80fde8fd14fda0ff4001100220022c018c00d80054ffe4ff50fe88fdf0fe08ff1000c0024402d40220007cfea8fd80fd70fe68ffe4013401e401dc01400060ff94ff04feb8febcff00ff80001800ac0110012c00f40078ffe4ff64ff14ff10ff5cffd40048008c0098008000600028ffd4ff78ff38ff44ff940014008c00d400e000a40028ff98ff20fee4ff00ff7c003c00f00144010c0060ffbcff70ff80ffacffccffccffc8ffe000040020002800240020000cfff0ffe4fff80020004400440014ffd0ff98ff8cffb40004005400880080003cffd4ff6cff38ff54ffb0003000a400d800bc0058ffd8ff80ff74ffa0ffe0000c00140000ffe4ffd8fff8003c0068005c0018ffb8ff74ff7cffd4004c00a400ac0060ffe8ff70ff28ff1cff64fff800a40120013000c40000ff38feccfee4ff6c002400c0010000d00054ffc0ff50ff28ff58ffcc004c0094008400440008ffe4ffe0ffe0ffd8ffd8ffec00040014000cffe8ffccffdc0020007000840040ffd0ff80ff78ffb4fff40014001c002400300034001c0000ffecffe8fff0ffe8ffdcffd8ffe4fff8001c0034003c002c0000ffd0ffc4ffec002400400024ffe4ffb0ffa8ffc4ffe0fff0000c0040008000980060ffe4ff78ff58ff84ffc800080044007c0098006cfffcff80ff44ff60ffc00028006c0088007c0040ffdcff84ff6cffa4000c006800840050fff0ff98ff7cffb00014007400b000ac0060ffccff30fee0ff10ffa80044009c0090005c0040003800300018fff0ffd0ffb8ffb8ffccffecffe4ffb0ff88ffb8004c00f4013400c8ffe8ff0cfea8fef4ffbc0098010800d80040ffbcff90ffb4ffe4fffcfffcfff8fff0fff00008002c003c001cffe0ffc0ffc8ffec000c001800140000fff0fff80010001c0010fff4ffe4ffe4fff0fffc0014003000340020fff8ffccffacffa4ffb8fff80048007400640024ffdcffb4ffb0ffc4ffe8000c0024001c0000fff800180050007800600000ff84ff30ff24ff6cfff0007400cc00d40090002cffc4ff78ff60ff7cffd00030006c007000440008ffc0ff88ff78ffb00024009400bc0078fff8ff80ff50ff6cffb4000c00680098008c004cfff0ffa4ff84ff94ffcc001000400050003c0018fff0ffccffbcffc8ffec0014002c00280014fffcfff40008002000280004ffccffa0ffa8ffe0001c003c0038002c00240010fff0ffccffc8ffe00000001c002000180008fff4ffe8ffe8fff4fff8fff8fff80000001000140004fff4fff0fff80004000400040008000c000800040000fff4ffecffe8ffe8ffe8ffdcffdcfff00014003400400040003800280004ffccff9cff98ffbcffec000c001c001c0024003c004c003c0010ffdcffbcffb4ffc4ffe40008002400200004ffe8ffe4000000180008ffe8ffe40004002800300010fff0ffdcffd4ffd8fff40030006800640010ff9cff58ff70ffd00034006c007400540020ffe4ffb0ffa4ffcc0010004c00640048fffcffa4ff70ff84ffdc0044008000780030ffd0ff88ff7cffa8fff000400078009400880048ffdcff80ff64ff8cffdc0020003c00280004ffe8ffec000400140010fff8ffecfff40004000c0008fff0ffe4fff4001400280020fff0ffacff88ffa80010008400c000900020ffb8ff80ff80ffa4ffd40000002c0054005c0044000cffd8ffbcffc4ffd4ffe4fffc00200040003c0004ffccffc4fff40030003c0018fffcfff8fffcfffcffe8ffd0ffd4fff40010fffcffc4ff98ffac</ascan>
+            </setup>
+          </setups>
+        </probe>
+      </probes>
+    </dsi>
+  </dsis>
+</nanosense>

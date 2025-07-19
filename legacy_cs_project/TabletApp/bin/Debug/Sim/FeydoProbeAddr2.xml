@@ -1,0 +1,860 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--  version: file version 
+      testId: GUID, generated for each test, guaranteeing uniqueness.
+-->
+<nanosense version="1.0" testId="2015-02-05-0012" testUser="Joe Technician">
+  <company>
+    <!--
+      Companies cannot be created from an XML upload. ID field is required. All
+      other fields here are ignored by the cloud service, but should still be
+      included for portability.
+      -->
+    <id>2</id>
+    <name>National Fuel</name>
+    <location>
+      <address1>225 Wayne Street</address1>
+      <address2 />
+      <city>Erie</city>
+      <state>PA</state>
+      <postalCode>16507</postalCode>
+      <country>USA</country>
+    </location>
+    <phone>8148718388</phone>
+    <site>Erie Site</site>
+    <plant>Millcreek Plant</plant>
+    <asset>Presque Isle</asset>
+  </company>
+  <!--
+   collectionPoint can be omitted if the DSI tag uses the ID field. It should
+   probably still be included for portability.
+   -->
+  <collectionPoint latitude="42.110493" longitude="-80.154104">
+    <!--
+      Name will be used to link it to an existing record in the database. If one
+      does not exist, it will be created from the name and other fields.
+      -->
+    <name>Test Board</name>
+    <description>A&amp;L West</description>
+  </collectionPoint>
+   <dsis>
+      <dsi address="2" latitude="42.110493" longitude="-80.154104">
+         <!--
+         Serial number is required. Will be used to find the DSI in the cloud. If
+         the record exists, all other DSI fields will be ignored. If it does not
+         exist, the fields will be used to create a DSI in the cloud.
+         -->
+         <serialNumber>PI-DSI0003</serialNumber>
+         <tag>12345678</tag>
+         <firmware>
+            <micro>2015-03-04</micro>>
+            <fpga>10</fpga>
+         </firmware>
+         <packetVersion>1.0</packetVersion>
+         <baudRate>115200</baudRate>
+         <parity>1</parity>
+         <ProbeCount>16</ProbeCount>
+         <probes>
+            <probe num="1" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>128</muxSwitchSettings>
+                     <!-- 0x0080 -->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="2" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>400</gain>
+                     <muxSwitchSettings>64</muxSwitchSettings>
+                     <!-- 0x0040 -->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>550</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>500</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="3" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>400</gain>
+                     <muxSwitchSettings>32</muxSwitchSettings>
+                     <!-- 0x0020 -->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>150</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>500</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="4" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>16</muxSwitchSettings>
+                     <!--0x0010-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="5" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>8</muxSwitchSettings>
+                     <!--0x0008-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="6" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>4</muxSwitchSettings>
+                     <!--0x0004-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="7" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>2</muxSwitchSettings>
+                     <!--0x0002-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="8" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>1</muxSwitchSettings>
+                     <!--0x0001-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="9" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>32768</muxSwitchSettings>
+                     <!--0x8000-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="10" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>16384</muxSwitchSettings>
+                     <!--0x4000-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="11" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>8192</muxSwitchSettings>
+                     <!--0x2000-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="12" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>4096</muxSwitchSettings>
+                     <!--0x1000-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="13" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>2048</muxSwitchSettings>
+                     <!--0x0800-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="14" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>1024</muxSwitchSettings>
+                     <!--0x0400-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="15" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>512</muxSwitchSettings>
+                     <!--0x0200-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+            <probe num="16" latitude="23.3434" longitude="-34.341234">
+               <!--
+               Sequence number is required. Will be used to find the probe in the
+               cloud by concatenating it with the serial # (serialNumber + '-' +
+               sequenceNumber). If the record exists, the following fields will be
+               ignored. If it does not exist, the fields will be used to create a
+               probe in the cloud.
+               -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Block in my office.</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>233000</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>450</gain>
+                     <muxSwitchSettings>256</muxSwitchSettings>
+                     <!--0x0100-->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>75</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>0</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+         </probes>
+      </dsi>
+   </dsis>
+</nanosense>

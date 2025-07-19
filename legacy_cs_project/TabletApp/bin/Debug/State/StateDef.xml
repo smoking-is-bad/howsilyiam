@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<statedef>
+  <state id="home" title="resource#StateTitleHome" background="default.png" content="TabletApp.Content.Home">
+    <param name="selectable" value="false"/>
+  </state>
+  <state id="readlogger" title="resource#StateTitleReadLogger" content="TabletApp.Content.ReadLogger" align="span">
+    <param name="message" value="resource#MessageWaitLogger"/>
+    <button id="cancel" title="resource#ButtonCancel" state="home" action="cancel" position="5"/>
+  </state>
+  <state id="hookup" title="resource#StateTitleHookup" content="TabletApp.Content.HookUpDsi" align="span">
+    <button id="back" title="resource#ButtonBack" state="home" position="4"/>
+    <button id="next" title="resource#ButtonNext" state="scan" position="5"/>
+  </state>
+  <state id="scan" title="resource#StateTitleScanNetwork" content="TabletApp.Content.DataViewThickness">
+    <param name="mode" value="scan"/>
+    <global name="dataviewback" value="scan"/>
+     <!--Differentitate uses of this content view with global "readmode" with values sensor, logger, file -->
+    <button id="readsel" title="resource#ButtonReadSelected" state="progress" action="readsel" position="1"/>
+    <button id="rescan" title="resource#ButtonRescan" action="rescan" position="2"/>
+    <button id="back" title="resource#ButtonBack" state="back" position="4"/>
+    <button id="readall" title="resource#ButtonReadAll" state="progress" action="readall" position="5"/>
+  </state>
+  <state id="progress" title="resource#StateTitleReadProgress" content="TabletApp.Content.DataViewAscan" align="span">
+    <param name="mode" value="progress"/>
+    <param name="nextstate" value="dvascan"/>
+    <button id="back" title="resource#ButtonBack" state="scan" position="4"/>
+  </state>
+  <state id="dvascan" title="resource#StateTitleAscan" content="TabletApp.Content.DataViewAscan" align="span">
+    <param name="mode" value="ascan"/>
+    <global name="uploadback" value="dvascan"/>
+    <button id="thickness" title="resource#ButtonViewThickness" state="dvthickness" position="1"/>
+    <button id="summary" title="resource#ButtonViewSummary" state="dvsummary" position="2"/>
+    <button id="back" title="resource#ButtonBack" state="global#dataviewback" position="3"/>
+    <button id="email" title="resource#ButtonEmail" state="email" image="email_icon" position="4"/>
+    <button id="upload" title="resource#ButtonUpload" state="upload" image="upload_icon" position="5"/>
+  </state>
+  <state id="dvthickness" title="resource#StateTitleThickness" content="TabletApp.Content.DataViewThickness">
+    <param name="mode" value="thickness"/>
+    <button id="ascan" title="resource#ButtonViewAscan" state="dvascan" position="1"/>
+    <button id="summary" title="resource#ButtonViewSummary" state="dvsummary" position="2"/>
+    <button id="back" title="resource#ButtonBack" state="global#dataviewback" position="3"/>
+    <button id="email" title="resource#ButtonEmail" state="email" image="email_icon" position="4"/>
+    <button id="upload" title="resource#ButtonUpload" state="upload" image="upload_icon" position="5"/>
+  </state>
+  <state id="dvsummary" title="resource#StateTitleSummary" content="TabletApp.Content.DataViewSummary" align="span">
+    <button id="thickness" title="resource#ButtonViewThickness" state="dvthickness" position="1"/>
+    <button id="ascan" title="resource#ButtonViewAscan" state="dvascan" position="2"/>
+    <button id="back" title="resource#ButtonBack" state="global#dataviewback" position="3"/>
+    <button id="email" title="resource#ButtonEmail" state="email" image="email_icon" position="4"/>
+    <button id="upload" title="resource#ButtonUpload" state="upload" image="upload_icon" position="5"/>
+  </state>
+  <state id="review" title="resource#StateTitleReview" content="TabletApp.Content.FileSelect">
+    <param name="mode" value="review"/>
+    <global name="dataviewback" value="review"/>
+    <global name="datamode" value="review"/>
+    <button id="back" title="resource#ButtonBack" state="home" position="4"/>
+    <button id="proceed" title="resource#ButtonReview" state="dvascan" action="next" image="view_icon" position="5"/>
+  </state>
+  <state id="emailselect" title="resource#StateTitleEmail" content="TabletApp.Content.FileSelect">
+    <param name="mode" value="email"/>
+    <global name="uploadback" value="emailselect"/>
+    <button id="back" title="resource#ButtonBack" state="home" position="4"/>
+    <button id="proceed" title="resource#ButtonEmail" state="email" action="next" image="email_icon" position="5"/>
+  </state>
+  <state id="uploadselect" title="resource#StateTitleUpload" content="TabletApp.Content.FileSelect">
+    <param name="mode" value="upload"/>
+    <global name="uploadback" value="uploadselect"/>
+    <button id="back" title="resource#ButtonBack" state="home" position="4"/>
+    <button id="proceed" title="resource#ButtonUpload" state="upload" action="next" image="upload_icon" position="5"/>
+  </state>
+  <state id="upload" title="resource#StateTitleCloudUpload" content="TabletApp.Content.Upload">
+    <button id="back" title="resource#ButtonBack" state="global#uploadback" position="4"/>
+    <button id="done" title="resource#ButtonDone" action="done" position="5"/>
+  </state>
+  <state id="email" title="resource#StateTitleEmail" content="TabletApp.Content.Email">
+    <button id="keyboard" title="resource#ButtonKeyboard" action="keyboard" image="keyboard" position="2" tabStop="false"/>
+    <button id="back" title="resource#ButtonBack" state="global#uploadback" position="4"/>
+    <button id="send" title="resource#ButtonSend" action="send" position="5"/>
+  </state>
+  <state id="about" title="resource#StateTitleAbout" content="TabletApp.Content.About">
+    <button id="back" title="resource#ButtonOk" state="back" position="5"/>
+  </state>
+  <state id="settings" title="resource#StateTitleSettings" content="TabletApp.Content.Settings" align="span">
+    <button id="keyboard" title="resource#ButtonKeyboard" action="keyboard" image="keyboard" position="1" tabStop="false"/>
+    <button id="back" title="resource#ButtonSave" state="back" action="save" position="5"/>
+  </state>
+  <state id="comm-main" title="resource#StateTitleCommMain" content="TabletApp.Content.Commissioning.Main">
+  </state>
+  <state id="comm-message-reset" title="resource#StateTitleCommReset" content="TabletApp.Content.Commissioning.ResetDsi">
+    <button id="load" action="loadconfig" title="resource#ButtonLoadConfig" position="1"/>
+    <button id="cancel" action="cancel" title="resource#ButtonCancel" state="comm-main" position="4"/>
+    <button id="reset" title="resource#ButtonReset" action="resetdsi" state="comm-main" position="5"/>
+  </state>
+  <state id="comm-new" title="resource#StateTitleCommNew" content="TabletApp.Content.Commissioning.New">
+    <global name="comm-newhome" value="comm-new"/>
+    <button id="camera" title="resource#ButtonCamera" state="comm-camera" position="1" tabStop="false"/>
+    <button id="keyboard" title="resource#ButtonKeyboard" action="keyboard" image="keyboard" position="2" tabStop="false"/>
+    <button id="back" title="resource#ButtonBack" state="comm-main" position="4"/>
+    <button id="next" title="resource#ButtonNext" state="comm-buildnetwork" action="save" position="5"/>
+  </state>
+  <state id="comm-newcompany" title="resource#StateTitleCommNewCompany" content="TabletApp.Content.Commissioning.NewCompany">
+    <button id="keyboard" title="resource#ButtonKeyboard" action="keyboard" image="keyboard" position="1" tabStop="false"/>
+    <button id="back" title="resource#ButtonBack" state="global#comm-newhome" position="4"/>
+    <button id="done" title="resource#ButtonDone" state="global#comm-newhome" action="createcompany" position="5"/>
+  </state>
+  <state id="comm-buildnetwork" title="resource#StateTitleCommBuildNetwork" content="TabletApp.Content.Commissioning.BuildNetwork">
+    <global name="comm-home" value="comm-buildnetwork"/>
+    <button id="add" title="resource#ButtonAdd" state="comm-message-connectdsi" position="1"/>
+    <button id="cancel" title="resource#ButtonCancel" action="cancel" state="comm-main" position="4"/>
+    <button id="done" title="resource#ButtonDone" state="comm-message-measurenetwork" position="5"/>
+  </state>
+  <state id="comm-message-connectdsi" title="resource#StateTitleCommConnect" content="TabletApp.Content.Commissioning.ConnectDsi">
+    <param name="message" value="resource#MessagePlug"/>
+    <button id="back" action="back" title="resource#ButtonBack" state="global#comm-home" position="4"/>
+    <button id="ok" title="resource#ButtonOk" action="readdsi" state="comm-message-dsiwarning" position="5"/>
+  </state>
+  <state id="comm-message-connectdsi-add" title="resource#StateTitleCommConnectAdd" content="TabletApp.Content.Commissioning.ConnectDsi">
+    <param name="message" value="resource#MessagePlugAdd"/>
+    <button id="back" action="back" title="resource#ButtonBack" state="global#comm-home" position="4"/>
+    <button id="ok" title="resource#ButtonOk" action="readdsi" state="comm-message-dsiwarning" position="5"/>
+  </state>
+  <state id="comm-message-connectdsi-replace" title="resource#StateTitleCommConnectReplace" content="TabletApp.Content.Commissioning.ConnectDsi">
+    <param name="message" value="resource#MessagePlugReplace"/>
+    <button id="back" action="back" title="resource#ButtonBack" state="global#comm-home" position="4"/>
+    <button id="ok" title="resource#ButtonOk" action="readdsi" state="comm-message-dsiwarning" position="5"/>
+  </state>
+  <state id="comm-message-dsiwarning" title="resource#StateTitleCommDsiWarning" content="TabletApp.Content.Commissioning.SetDsiAddress">
+    <param name="message" value="resource#MessageWarning"/>
+    <button id="reset" title="resource#ButtonResetAddress" action="resetaddress" state="global#comm-home" position="1"/>
+    <button id="back" action="back" title="resource#ButtonBack" state="global#comm-home" position="4"/>
+    <button id="ok" title="resource#ButtonOk" action="setaddress" state="comm-dsidata" position="5"/>
+  </state>
+  <state id="comm-dsidata" title="resource#StateTitleCommDsiData" content="TabletApp.Content.Commissioning.DsiData" align="span">
+    <param name="mode" value="init"/>
+    <button id="camera" title="resource#ButtonCamera" state="comm-camera" position="1" tabStop="false"/>
+    <button id="keyboard" title="resource#ButtonKeyboard" action="keyboard" image="keyboard" position="2" tabStop="false"/>
+    <button id="cancel" title="resource#ButtonCancel" action="cancel" state="global#comm-home" position="4"/>
+    <button id="next" title="resource#ButtonNext" action="savedsi" state="comm-message-collectdata" position="5"/>
+  </state>
+  <state id="comm-message-collectdata" title="resource#StateTitleCommCollectData" content="TabletApp.Content.Message">
+    <param name="message" value="resource#MessageCollect"/>
+    <button id="back" title="resource#ButtonBack" state="comm-dsidata" position="3"/>
+    <button id="no" title="resource#ButtonNo" state="global#comm-home" position="4"/>
+    <button id="yes" title="resource#ButtonYes" action="collectdata" state="comm-readprogress" position="5"/>
+  </state>
+  <state id="comm-readprogress" title="resource#StateTitleCommReadProgress" content="TabletApp.Content.DataViewAscan" align="span">
+    <param name="mode" value="progress"/>
+    <param name="commissioning" value="true"/>
+    <param name="nextstate" value="comm-dvthickness"/>
+    <button id="back" title="resource#ButtonBack" state="global#comm-home" position="4"/>
+  </state>
+  <state id="comm-dvthickness" title="resource#StateTitleCommThickness" content="TabletApp.Content.DataViewThickness">
+    <param name="mode" value="thickness"/>
+    <param name="commissioning" value="true"/>
+    <button id="ascan" title="resource#ButtonViewAscan" state="comm-dvascan" position="1"/>
+    <button id="back" title="resource#ButtonBack" state="comm-dsidata" position="4"/>
+    <button id="done" title="resource#ButtonDone" state="global#comm-home" position="5"/>
+  </state>
+  <state id="comm-dvascan" title="resource#StateTitleCommAscan" content="TabletApp.Content.DataViewAscan" align="span">
+    <param name="mode" value="ascan"/>
+    <param name="commissioning" value="true"/>
+    <button id="thickness" title="resource#ButtonViewThickness" state="comm-dvthickness" position="1"/>
+    <button id="back" title="resource#ButtonBack" state="comm-dsidata" position="4"/>
+    <button id="done" title="resource#ButtonDone" state="global#comm-home" position="5"/>
+  </state>
+  <state id="comm-probeparams" title="resource#StateTitleCommProbeParams" content="TabletApp.Content.Commissioning.ProbeParams" align="span">
+    <button id="reset" title="resource#ButtonReset" action="resetprobe" position="1" tabStop="false"/>
+    <button id="keyboard" title="resource#ButtonKeyboard" action="keyboard" image="keyboard" position="2" tabStop="false"/>
+    <button id="previous" title="resource#ButtonPrevious" action="previous" state="comm-probeparams" force="true" position="3"/>
+    <button id="next" title="resource#ButtonNext" action="next" state="comm-probeparams" force="true" position="4"/>
+    <button id="done" title="resource#ButtonDone" action="saveprobe" state="comm-readprogress" position="5"/>
+  </state>
+  <state id="comm-dsiparams" title="resource#StateTitleCommDsiParams" content="TabletApp.Content.Commissioning.DsiData" align="span">
+    <param name="mode" value="edit"/>
+    <button id="keyboard" title="resource#ButtonKeyboard" action="keyboard" image="keyboard" position="2" tabStop="false"/>
+    <button id="back" title="resource#ButtonBack" state="comm-dvthickness" position="4"/>
+    <button id="done" title="resource#ButtonDone" action="savedsi" state="comm-dvthickness" position="5"/>
+  </state>
+  <state id="comm-message-measurenetwork" title="resource#StateTitleCommMeasure" content="TabletApp.Content.Commissioning.MeasureNetwork">
+    <global name="dataviewback" value="comm-message-measurenetwork"/>
+    <param name="message" value="resource#MessageMeasure"/>
+    <button id="back" title="resource#ButtonBack" state="global#comm-home" position="3"/>
+    <button id="readall" title="resource#ButtonReadAll" action="readall" state="progress" position="4"/>
+    <button id="done" title="resource#ButtonDone" state="home" position="5"/>
+  </state>
+  <state id="comm-camera" title="resource#StateTitleCommCamera" content="TabletApp.Content.Commissioning.Camera">
+    <button id="done" title="resource#ButtonDone" state="back" position="5"/>
+  </state>
+  <state id="comm-message-plugin" title="resource#StateTitleCommPlugin" content="TabletApp.Content.Message">
+    <param name="message" value="resource#MessagePlugAddEditReplace"/>
+    <button id="back" title="resource#ButtonBack" state="comm-main" position="4"/>
+    <button id="ok" title="resource#ButtonOk" state="comm-addedit" position="5"/>
+  </state>
+  <state id="comm-addedit" title="resource#StateTitleCommAddEdit" content="TabletApp.Content.DataViewThickness">
+    <global name="comm-home" value="comm-addedit"/>
+    <global name="replacedsi" value="false"/>
+    <global name="copydsi" value="false"/>
+    <global name="adddsi" value="false"/>
+    <global name="editdsi" value="false"/>
+    <param name="mode" value="scan"/>
+    <param name="commissioning" value="true"/>
+    <button id="add" title="resource#ButtonAdd" action="add" state="comm-add" position="1"/>
+    <button id="edit" title="resource#ButtonEdit" action="edit" state="comm-edit" position="2"/>
+    <button id="replace" title="resource#ButtonReplace" action="replace" state="comm-message-copyscratch" position="3"/>
+    <button id="editstring" title="resource#ButtonEditGlobals" state="comm-edit-string" position="4"/>
+    <button id="done" title="resource#ButtonDone" action="done" state="comm-message-measurenetwork" position="5"/>
+  </state>
+  <state id="comm-message-copyscratch" title="resource#StateTitleCommCopyDsi" content="TabletApp.Content.Message">
+    <global name="replacedsi" value="true"/>
+    <param name="message" value="resource#MessageCopyScratch"/>
+    <button id="copy" title="resource#ButtonCopy" state="comm-copydsi" position="4"/>
+    <button id="scratch" title="resource#ButtonScratch" state="comm-scratch" position="5"/>
+  </state>
+  <state id="comm-copydsi" nextState="comm-message-connectdsi-replace">
+    <global name="copydsi" value="true"/>
+  </state>
+  <state id="comm-scratch" nextState="comm-message-connectdsi-replace">
+    <global name="copydsi" value="false"/>
+  </state>
+  <state id="comm-add" nextState="comm-message-connectdsi-add">
+    <global name="adddsi" value="true"/>
+  </state>
+  <state id="comm-edit" nextState="comm-dsidata">
+    <global name="editdsi" value="true"/>
+  </state>
+  <state id="comm-edit-string" title="resource#StateTitleCommEditGlobals" content="TabletApp.Content.Commissioning.New">
+    <param name="edit" value="true"/>
+    <global name="comm-newhome" value="comm-edit-string"/>
+    <button id="keyboard" title="resource#ButtonKeyboard" action="keyboard" image="keyboard" position="1" tabStop="false"/>
+    <button id="back" title="resource#ButtonBack" state="comm-addedit" position="4"/>
+    <button id="save" title="resource#ButtonSave" action="save" state="comm-addedit" position="5"/>
+  </state>
+</statedef>

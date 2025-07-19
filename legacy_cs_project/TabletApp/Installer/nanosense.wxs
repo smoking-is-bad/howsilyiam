@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015 Sensor Networks, Inc. All rights reserved. -->
+<!-- WIX installer configuration file for the smartPIMS app        -->
+<!--Guid for our application-->
+<?define UpgradeCode = "7821903c-b511-4206-a730-0d4ad3b306c1"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  <Product Id="*" Name="smartPIMS" Language="1033" Version="$(var.Version)" Manufacturer="Sensor Networks" UpgradeCode="$(var.UpgradeCode)">
+    <Package Id="*" Description="Installer for the smartPIMS application" Comments="This is a Windows Installer for the smartPIMS application" Manufacturer="Sensor Networks" InstallerVersion="405" Compressed="yes" InstallScope="perMachine" />
+    <!-- Properties -->
+    <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Launch smartPIMS" />
+    <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOX" Value="1"/>
+    <Icon Id="AppIcon" SourceFile=".\SNLOGO.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="AppIcon" />
+    <PropertyRef Id="WIX_DIR_COMMON_DOCUMENTS" />
+    <!-- Require Windows 8 or higher -->
+    <Condition Message="Windows 7 or higher is required."><![CDATA[Installed OR VersionNT >= 601]]></Condition>
+    <!-- Upgrade info -->
+    <MajorUpgrade AllowSameVersionUpgrades="yes" DowngradeErrorMessage="Can’t downgrade." Schedule="afterInstallFinalize" />
+    <Media Id="1" Cabinet="product.cab" EmbedCab="yes" />
+    <!-- Main install information -->
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="DesktopFolder" Name="Desktop"/>
+      <Directory Id="WIX_DIR_COMMON_DOCUMENTS">
+        <Directory Id="SNIData" Name="SNI" />
+      </Directory>
+      <Directory Id="CommonAppDataFolder" Name="CommonAppDataFolder">
+        <Directory Id="SensorNetworksAppDataFolder" Name="SensorNetworks">
+          <Component Id="AppDirDataPermissions" Guid="715d9db3-d5d8-4c27-b3f2-06a0744aee0b" KeyPath="yes">
+            <CreateFolder>
+              <util:PermissionEx User="Everyone" GenericAll="yes" />
+            </CreateFolder>
+          </Component>
+          <Component Id="ProbeAutofill" Guid="730e34f8-5cf9-4b00-83d0-6dab3d823ea8">
+            <RemoveFile Id="Remove_ProbeAutofill" Name="Probe.xml" On="install" />
+            <File Id="ProbeAutofillFile" Name="Probe.xml" Source=".\Autofill\AutofillProbe.xml" Vital="yes" />
+          </Component>
+          <Component Id="CompanyAutofill" Guid="d41261bd-fbbe-47c3-b4f0-dd21bdddfc4c">
+            <File Id="CompanyAutofillFile" Name="Company.xml" Source=".\Autofill\AutofillCompany.xml" Vital="yes" KeyPath="yes" />
+          </Component>
+          <Component Id="Readme" Guid="b591c7bd-f029-4822-8c73-7c4bbc112520">
+            <RemoveFile Id="Remove_Readme" Name="Readme.txt" On="install" />
+            <File Id="ReadmeFile" Name="Readme.txt" Source=".\Autofill\readme.txt" Vital="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="ProgramFilesFolder" Name="PFiles">
+        <Directory Id="INSTALLDIR" Name="SensorNetworks">
+          <Directory Id="HelpDir" Name="Help">
+            <Component Id="Help" Guid="05e3cd19-7563-47b4-a185-a23afc4a8962">
+              <RemoveFile Id="Remove_HelpFile" Name="manual.pdf" On="install" />
+              <File Id="HelpFile" Name="manual.pdf" Source=".\Help\manual.pdf" Vital="yes" />
+            </Component>
+          </Directory>
+          <Directory Id="StateDir" Name="State">
+            <Component Id="State" Guid="f07a124d-793e-4d68-ab5a-de0eced52e58">
+              <RemoveFile Id="Remove_StateFile" Name="StateDef.xml" On="install" />
+              <File Id="StateFile" Name="StateDef.xml" Source=".\State\StateDef.xml" Vital="yes" />
+            </Component>
+          </Directory>
+          <Directory Id="BackgroundDir" Name="Background">
+            <Component Id="Background" Guid="abd0c9e0-664d-4475-ba9c-d4d706484aa8">
+              <RemoveFile Id="Remove_BackgroundFile" Name="default.png" On="install" />
+              <File Id="BackgroundFile" Name="default.png" Source=".\Background\default.png" Vital="yes" />
+            </Component>
+          </Directory>
+          <Component Id="MainExecutable" Guid="9186eae2-b189-4d50-8176-03b020ecafbc">
+            <RemoveFile Id="Remove_MainExe" Name="smartPIMS.exe" On="install" />
+            <File Id="MainExe" Name="smartPIMS.exe" Source=".\bin\Release\smartPIMS.exe" Vital="yes" />
+          </Component>
+          <Directory Id="ZhFolder" Name="zh">
+            <Component Id="ZhFile" Guid="cd747b0a-ca38-413f-b107-cd90bc2a253e">
+              <CreateFolder />
+              <RemoveFile Id="Remove_ZhDll" Name="smartPIMS.resources.dll" On="install" />
+              <File Id="ZhDll" Name="smartPIMS.resources.dll" Source=".\bin\Release\zh\smartPIMS.resources.dll" Vital="yes" />
+            </Component>
+          </Directory>
+         <Directory Id="JaFolder" Name="ja">
+          <Component Id="JaFile" Guid="9802A23E-C0A0-472E-A2C0-24B411B457B6">
+           <CreateFolder />
+           <RemoveFile Id="Remove_JaDll" Name="smartPIMS.resources.dll" On="install" />
+           <File Id="JaDll" Name="smartPIMS.resources.dll" Source=".\bin\Release\ja\smartPIMS.resources.dll" Vital="yes" />
+          </Component>
+         </Directory>
+          <Component Id="NetExtDll" Guid="6791792c-21f1-44ec-aa0a-853324350046">
+            <RemoveFile Id="Remove_NetExtDll" Name="System.Net.Http.Formatting.dll" On="install" />
+            <File Id="NetExt" Name="System.Net.Http.Formatting.dll" Source=".\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll" Vital="yes" />
+          </Component>
+          <Component Id="AForgeDirectShowDll" Guid="c40fd835-fcce-417d-8b6f-7926aee60934">
+            <RemoveFile Id="Remove_AForgeDirectShowDll" Name="AForge.Video.DirectShow.dll" On="install" />
+            <File Id="AForgeDirectShow" Name="AForge.Video.DirectShow.dll" Source=".\ThirdParty\AForge.Video.DirectShow.dll" Vital="yes" />
+          </Component>
+          <Component Id="AForgeVideoDll" Guid="b5f2bc9c-afd3-44e3-803f-122ffcc26e27">
+            <RemoveFile Id="Remove_AForgeVideoDll" Name="AForge.Video.dll" On="install" />
+            <File Id="AForgeVideo" Name="AForge.Video.dll" Source=".\ThirdParty\AForge.Video.dll" Vital="yes" />
+          </Component>
+          <Component Id="TreeViewDll" Guid="8ab3ba33-6e14-4760-9ee9-4a55c97647f9">
+            <RemoveFile Id="Remove_TreeViewDll" Name="CodersLab.Windows.Controls.TreeView.dll" On="install" />
+            <File Id="TreeView" Name="CodersLab.Windows.Controls.TreeView.dll" Source=".\ThirdParty\CodersLab.Windows.Controls.TreeView.dll" Vital="yes" />
+          </Component>
+           <Component Id="JsonDll" Guid="448AAC61-7995-4D2D-B0D2-E09A33CE081B">
+              <RemoveFile Id="Remove_JsonDll" Name="Newtonsoft.Json.dll" On="install" />
+              <File Id="Json" Name="NewtonSoft.Json.dll" Source=".\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll" Vital="yes" />
+           </Component>
+        </Directory>
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+          <Directory Id="ApplicationProgramsFolder" Name="smartPIMS"/>
+      </Directory>
+    </Directory>
+    <!-- Start menu shortcut -->
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="e4a70093-de93-4f30-9609-1f6f73eaa3a6">
+        <Shortcut Id="ApplicationStartMenuShortcut"
+                  Name="smartPIMS"
+                  Description="Sensor Networks, Inc."
+                  Target="[#MainExe]"
+                  WorkingDirectory="INSTALLDIR"/>
+        <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\smartPIMS" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+      <Component Id="DataDirShortcut" Guid="6e2c5942-df8b-4697-8312-f11a3a2e292f">
+        <Shortcut Id="DataDirStartMenuShortcut"
+                  Name="smartPIMS Data"
+                  Description="smartPIMS Data Directory"
+                  Target="[SNIData]"
+                  WorkingDirectory="INSTALLDIR"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\smartPIMSData" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+    <DirectoryRef Id="DesktopFolder">
+      <Component Id="DataDirShortcutDesk" Guid="86d361e2-83f1-467b-85c2-289d97c2fc28">
+        <Shortcut Id="DataDirDesktopShortcut"
+                  Name="smartPIMS Data"
+                  Description="smartPIMS Data Directory"
+                  Target="[SNIData]"
+                  WorkingDirectory="INSTALLDIR"/>
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\smartPIMSDataDesk" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+    <!-- Custom Action for launching the app after install -->
+    <CustomAction Id="LaunchApp" Directory="INSTALLDIR" ExeCommand="[INSTALLDIR]smartPIMS.exe" Return="asyncNoWait" />
+    <Feature Id="Complete" Level="1">
+      <ComponentRef Id="MainExecutable" />
+      <ComponentRef Id="ZhFile" />
+      <ComponentRef Id="JaFile" />
+      <ComponentRef Id="NetExtDll" />
+      <ComponentRef Id="AForgeDirectShowDll" />
+      <ComponentRef Id="AForgeVideoDll" />
+      <ComponentRef Id="TreeViewDll" />
+      <ComponentRef Id="JsonDll" />
+      <ComponentRef Id="Help" />
+      <ComponentRef Id="State" />
+      <ComponentRef Id="Background" />
+      <ComponentRef Id="AppDirDataPermissions" />
+      <ComponentRef Id="ProbeAutofill" />
+      <ComponentRef Id="CompanyAutofill" />
+      <ComponentRef Id="Readme" />
+      <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="DataDirShortcut" />
+      <ComponentRef Id="DataDirShortcutDesk" />
+    </Feature>
+    <!-- Define the UI -->
+    <UI Id="UserInterface">
+      <UIRef Id="WixUI_Minimal" />
+      <Publish Dialog="ExitDialog" 
+          Control="Finish" 
+          Event="DoAction" 
+          Value="LaunchApp">WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 and ((NOT Installed) OR (REINSTALL) OR (UPGRADINGPRODUCTCODE))</Publish>
+    </UI>
+    <WixVariable Id="WixUILicenseRtf" Value=".\Installer\SoftwareLicense.rtf" />
+    <!--<WixVariable Id="WixUIBannerBmp" Value=".\Installer\Resources\TopBanner.bmp" />
+    <WixVariable Id="WixUIDialogBmp" Value=".\Installer\Resources\Background.bmp" />
+    <WixVariable Id="WixUIInfoIco" Value=".\Installer\Resources\Info.bmp" />-->
+  </Product>
+</Wix>

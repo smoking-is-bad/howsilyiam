@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Default styles */
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-image: url(images/sidebar.png);
+	background-repeat: repeat-y; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+	font-family: 'Abel', sans-serif;
+	
+}
+a img {
+	border: 0
+}
+a:link {
+	color: #0F76BC;
+	text-decoration: none
+}
+a:visited {
+	color: #0F76BC;
+	text-decoration: underline
+}
+a:hover, a:active, a:focus {
+	text-decoration: none
+}
+ol, ul {
+margin-left: 20px;	
+}
+
+.clearfloat {
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0
+}
+
+.fltrt {
+	float: right;
+	margin-left: 8px
+}
+.fltlft {
+	float: left;
+	margin-right: 8px
+}
+
+/* Layout */
+#container {
+   overflow: auto;
+}
+#body-container {
+   margin: 0 0 0 70px;
+}
+#sidebar {
+    width: 70px;
+    float: left;
+}
+#sidebar .button a {
+	text-align: center;
+	display: block;
+	height: 70px;
+	width: 70px;
+	padding-top: 20px;	
+	overflow: hidden;
+}
+#sidebar .button a:hover {
+	background-image: url(images/sidebar-active.png);
+	background-repeat: repeat-y;	
+}
+
+.header {
+	height: 80px;
+	position: relative;
+	text-align: left;
+	background-image: url(images/header-bg.png);
+	background-repeat: repeat-x;
+}
+
+#logo {
+	margin: 5px 0 0 20px
+}
+#title {
+	width: 50%;
+	position: absolute;
+	top: 15px;
+	right: 16px;
+	height: 63px;
+	overflow: hidden;
+	text-align: right
+}
+#title h1 {
+	display: inline
+}
+.footer {
+	padding: 10px 0;
+	background-color: #ccc49f
+}
+
+
+
+
+/* Body */
+
+.content {
+	padding: 20px 30px;
+	margin: 0 auto;
+	text-align: left;
+}
+.reading {
+	width: 100%;
+	border-bottom: 1px solid #DEDEDE;
+	position: relative;
+	clear: both;
+	height: 90px;
+}
+.data {
+	width: 49%;
+	position: relative;
+	top: 70px;
+	float: left;
+}
+.data label {
+	font-weight: bold;	
+	height: 90px;
+	padding-right: 10px;
+}
+.waveform {
+	width: 49%;
+	height: 90px;
+	float: left;
+}
+
+/* Table */
+
+
+
+.ElTable {
+    border-width: 0px;
+    z-index: 10010;
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    l;text-align: center;
+    background-color: #f0f0f0;
+    odd-background-color: #ffffff;
+    border-width: 1px;
+    zebra: 1;
+    border-color: #dedede;
+    cells_styles: Array;
+    border-style: solid;
+}
+
+.ElTable > tbody {
+}
+
+.header {
+}
+
+.header > td {
+    font-weight: bold;
+    color: #222222;
+    border-color: #dedede;
+    border-width: 1px;
+    text-align: center;
+    background-color: #f0f0f0;
+    width: 54px;
+}
+
+.odd {
+}
+
+.odd > td {
+    color: #222222;
+    border-color: #dedede;
+    border-width: 1px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.odd > td > strong {
+}
+
+.even {
+}
+
+.even > td {
+    color: #222222;
+    border-color: #dedede;
+    border-width: 1px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.even > td > strong {
+}
+
+.even > td > strong > br {
+}
+.ElTable td.red {
+	background-color: #900;
+	color: #ffffff;
+	font-weight: bold;	
+}
+.ElTable td.yellow {
+	background-color: #FFE203;
+	font-weight: bold;	
+}
+
+.ElTable td.red a, .ElTable td.red a:link {
+	color: #FFFFFF;
+	text-decoration: underline;	
+}
+
+.ElTable td.yellow a, .ElTable td.yellow a:link {
+	color: #000;
+	text-decoration: underline;	
+}
+
+/* Sensor */
+
+.sensor-table {} 
+
+.sensor-table td {
+	text-align: left;
+	margin: 10px;
+}
+
+.sensor-table td.blue {
+	width: 43px;
+	height: 43px;
+	background-image: url(images/blue-box-small.png);
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.sensor-table td.white {
+	width: 43px;
+	height: 43px;
+	background-image: url(images/white-box.png);
+	background-repeat: no-repeat;
+	font-weight: 700;
+	line-height: 43px;	
+	text-align: center;
+}
+.sensor-table td.black {
+	width: 43px;
+	height: 43px;
+	background-image: url(images/black-box.png);
+	background-repeat: no-repeat;
+	font-weight: 700;
+	line-height: 43px;	
+	text-align: center;
+}
+
+.sensor-table td.yellow {
+	width: 43px;
+	height: 43px;
+	background-image: url(images/yellow-box-small.png);
+	background-repeat: no-repeat;
+	font-weight: 700;
+	line-height: 43px;	
+	color: #ffffff;
+	text-align: center;
+}
+
+.sensor-table td.red {
+		width: 43px;
+	height: 43px;
+	background-image: url(images/red-box-small.png);
+	background-repeat: no-repeat;
+	font-weight: 700;
+	line-height: 43px;	
+	color: #ffffff;
+	text-align: center;
+}

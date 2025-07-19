@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dsiButtonGrid1.ColumnCount" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="aDsiButton6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="aDsiButton6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton6.Name" xml:space="preserve">
+    <value>aDsiButton6</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton6.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton6.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="aDsiButton7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 0</value>
+  </data>
+  <data name="aDsiButton7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton7.Name" xml:space="preserve">
+    <value>aDsiButton7</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton7.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton7.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="aDsiButton8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 0</value>
+  </data>
+  <data name="aDsiButton8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton8.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton8.Name" xml:space="preserve">
+    <value>aDsiButton8</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton8.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton8.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="aDsiButton17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 0</value>
+  </data>
+  <data name="aDsiButton17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton17.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton17.Name" xml:space="preserve">
+    <value>aDsiButton17</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton17.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton17.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton17.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="aDsiButton5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 0</value>
+  </data>
+  <data name="aDsiButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton5.Name" xml:space="preserve">
+    <value>aDsiButton5</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton5.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton5.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="aDsiButton12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 0</value>
+  </data>
+  <data name="aDsiButton12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton12.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton12.Name" xml:space="preserve">
+    <value>aDsiButton12</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton12.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton12.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton12.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="aDsiButton14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 0</value>
+  </data>
+  <data name="aDsiButton14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton14.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton14.Name" xml:space="preserve">
+    <value>aDsiButton14</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton14.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton14.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton14.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="aDsiButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 0</value>
+  </data>
+  <data name="aDsiButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton3.Name" xml:space="preserve">
+    <value>aDsiButton3</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton3.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton3.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="aDsiButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 0</value>
+  </data>
+  <data name="aDsiButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton1.Name" xml:space="preserve">
+    <value>aDsiButton1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton1.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton1.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="aDsiButton9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 0</value>
+  </data>
+  <data name="aDsiButton9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton9.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton9.Name" xml:space="preserve">
+    <value>aDsiButton9</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton9.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton9.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton9.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="aDsiButton10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 0</value>
+  </data>
+  <data name="aDsiButton10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton10.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton10.Name" xml:space="preserve">
+    <value>aDsiButton10</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton10.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton10.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton10.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="aDsiButton11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 0</value>
+  </data>
+  <data name="aDsiButton11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton11.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton11.Name" xml:space="preserve">
+    <value>aDsiButton11</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton11.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton11.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton11.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="aDsiButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>696, 0</value>
+  </data>
+  <data name="aDsiButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton4.Name" xml:space="preserve">
+    <value>aDsiButton4</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton4.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton4.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton4.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="aDsiButton13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>754, 0</value>
+  </data>
+  <data name="aDsiButton13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton13.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton13.Name" xml:space="preserve">
+    <value>aDsiButton13</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton13.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton13.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton13.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="aDsiButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>812, 0</value>
+  </data>
+  <data name="aDsiButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton2.Name" xml:space="preserve">
+    <value>aDsiButton2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton2.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton2.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="aDsiButton15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>870, 0</value>
+  </data>
+  <data name="aDsiButton15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton15.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton15.Name" xml:space="preserve">
+    <value>aDsiButton15</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton15.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton15.Parent" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton15.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="dsiButtonGrid1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="dsiButtonGrid1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="dsiButtonGrid1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>934, 60</value>
+  </data>
+  <data name="dsiButtonGrid1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dsiButtonGrid1.Name" xml:space="preserve">
+    <value>dsiButtonGrid1</value>
+  </data>
+  <data name="&gt;&gt;dsiButtonGrid1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dsiButtonGrid1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dsiButtonGrid1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dsiButtonGrid1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="aDsiButton6" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton7" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton8" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton17" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton5" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton12" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton14" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton3" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton1" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton9" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton10" Row="0" RowSpan="1" Column="10" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton11" Row="0" RowSpan="1" Column="11" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton4" Row="0" RowSpan="1" Column="12" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton13" Row="0" RowSpan="1" Column="13" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton2" Row="0" RowSpan="1" Column="14" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton15" Row="0" RowSpan="1" Column="15" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25" /&gt;&lt;Rows Styles="Percent,100,Absolute,60" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="dsiButtonGrid2.ColumnCount" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="aDsiButton16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="aDsiButton16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton16.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton16.Name" xml:space="preserve">
+    <value>aDsiButton16</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton16.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton16.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton16.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="aDsiButton18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 0</value>
+  </data>
+  <data name="aDsiButton18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton18.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton18.Name" xml:space="preserve">
+    <value>aDsiButton18</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton18.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton18.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton18.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="aDsiButton19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 0</value>
+  </data>
+  <data name="aDsiButton19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton19.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton19.Name" xml:space="preserve">
+    <value>aDsiButton19</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton19.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton19.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton19.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="aDsiButton20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 0</value>
+  </data>
+  <data name="aDsiButton20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton20.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton20.Name" xml:space="preserve">
+    <value>aDsiButton20</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton20.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton20.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton20.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="aDsiButton21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 0</value>
+  </data>
+  <data name="aDsiButton21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton21.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton21.Name" xml:space="preserve">
+    <value>aDsiButton21</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton21.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton21.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton21.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="aDsiButton22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 0</value>
+  </data>
+  <data name="aDsiButton22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton22.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton22.Name" xml:space="preserve">
+    <value>aDsiButton22</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton22.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton22.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton22.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="aDsiButton23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 0</value>
+  </data>
+  <data name="aDsiButton23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton23.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton23.Name" xml:space="preserve">
+    <value>aDsiButton23</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton23.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton23.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton23.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="aDsiButton24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 0</value>
+  </data>
+  <data name="aDsiButton24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton24.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton24.Name" xml:space="preserve">
+    <value>aDsiButton24</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton24.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton24.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton24.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="aDsiButton25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>464, 0</value>
+  </data>
+  <data name="aDsiButton25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton25.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton25.Name" xml:space="preserve">
+    <value>aDsiButton25</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton25.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton25.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton25.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="aDsiButton26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 0</value>
+  </data>
+  <data name="aDsiButton26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton26.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton26.Name" xml:space="preserve">
+    <value>aDsiButton26</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton26.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton26.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton26.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="aDsiButton27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 0</value>
+  </data>
+  <data name="aDsiButton27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton27.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton27.Name" xml:space="preserve">
+    <value>aDsiButton27</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton27.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton27.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton27.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="aDsiButton28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 0</value>
+  </data>
+  <data name="aDsiButton28.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton28.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton28.Name" xml:space="preserve">
+    <value>aDsiButton28</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton28.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton28.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton28.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="aDsiButton29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>696, 0</value>
+  </data>
+  <data name="aDsiButton29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton29.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton29.Name" xml:space="preserve">
+    <value>aDsiButton29</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton29.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton29.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton29.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="aDsiButton30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>754, 0</value>
+  </data>
+  <data name="aDsiButton30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton30.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton30.Name" xml:space="preserve">
+    <value>aDsiButton30</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton30.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton30.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton30.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="aDsiButton31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>812, 0</value>
+  </data>
+  <data name="aDsiButton31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton31.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton31.Name" xml:space="preserve">
+    <value>aDsiButton31</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton31.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton31.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton31.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="aDsiButton32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>870, 0</value>
+  </data>
+  <data name="aDsiButton32.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aDsiButton32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 54</value>
+  </data>
+  <data name="aDsiButton32.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton32.Name" xml:space="preserve">
+    <value>aDsiButton32</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton32.Type" xml:space="preserve">
+    <value>TabletApp.Views.ADsiButton, smartPIMS, Version=1.0.0.156, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton32.Parent" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;aDsiButton32.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="dsiButtonGrid2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 65</value>
+  </data>
+  <data name="dsiButtonGrid2.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="dsiButtonGrid2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>934, 60</value>
+  </data>
+  <data name="dsiButtonGrid2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dsiButtonGrid2.Name" xml:space="preserve">
+    <value>dsiButtonGrid2</value>
+  </data>
+  <data name="&gt;&gt;dsiButtonGrid2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dsiButtonGrid2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dsiButtonGrid2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dsiButtonGrid2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="aDsiButton16" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton18" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton19" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton20" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton21" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton22" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton23" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton24" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton25" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton26" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton27" Row="0" RowSpan="1" Column="10" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton28" Row="0" RowSpan="1" Column="11" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton29" Row="0" RowSpan="1" Column="12" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton30" Row="0" RowSpan="1" Column="13" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton31" Row="0" RowSpan="1" Column="14" ColumnSpan="1" /&gt;&lt;Control Name="aDsiButton32" Row="0" RowSpan="1" Column="15" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25,Percent,6.25" /&gt;&lt;Rows Styles="Percent,100,Absolute,60" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="selectorLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 55</value>
+  </data>
+  <data name="selectorLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1, 200</value>
+  </data>
+  <data name="selectorLine.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;selectorLine.Name" xml:space="preserve">
+    <value>selectorLine</value>
+  </data>
+  <data name="&gt;&gt;selectorLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectorLine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;selectorLine.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="horizLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 173</value>
+  </data>
+  <data name="horizLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>523, 1</value>
+  </data>
+  <data name="horizLine.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;horizLine.Name" xml:space="preserve">
+    <value>horizLine</value>
+  </data>
+  <data name="&gt;&gt;horizLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;horizLine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;horizLine.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 174</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ADsiGrid</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

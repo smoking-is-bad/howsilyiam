@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<autofill xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <companies>
+    <company>
+      <id>Edit ID</id>
+      <name>Edit Company</name>
+    </company>
+  </companies>
+  <autofillplaces>
+    <companyPlaces companyId="Edit ID" companyName="Edit Company">
+      <places>
+        <place type="site">Edit Site</place>
+        <place type="plant">Edit Plant</place>
+        <place type="asset">Edit Asset</place>
+      </places>
+    </companyPlaces>
+ </autofillplaces>
+</autofill>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  version: file version 
+      testId: GUID, generated for each test, guaranteeing uniqueness.
+-->
+<nanosense version="1.0" testId="bebe1228-8351-4ff3-97ba-2ecf15412e02" testUser="Mark Feydo">
+   <company>
+      <!--
+      Companies cannot be created from an XML upload. ID field is required. All
+      other fields here are ignored by the cloud service, but should still be
+      included for portability.
+      -->
+      <id>3</id>
+      <name>Sensor Networks</name>
+      <location>
+         <address1>171 Technology Drive</address1>
+         <address2/>
+         <city>Boalsburg</city>
+         <state>PA</state>
+         <postalCode>16827</postalCode>
+         <country>USA</country>
+      </location>
+      <phone>814-466-7207</phone>
+   </company>
+   <site>Engineering Lab</site>
+   <!--
+   collectionPoint can be omitted if the DSI tag uses the ID field. It should
+   probably still be included for portability.
+   -->
+   <collectionPoint latitude="40.782169" longitude="-77.776845">
+      <!--
+      Name will be used to link it to an existing record in the database. If one
+      does not exist, it will be created from the name and other fields.
+      -->
+      <name>SNI Test Board</name>
+      <description>Data collected on the test bench at SNI</description>
+   </collectionPoint>
+   <dsis>
+      <dsi address="1" latitude="40.782169" longitude="-77.776845">
+         <!--
+      Serial number is required. Will be used to find the DSI in the cloud. If
+      the record exists, all other DSI fields will be ignored. If it does not
+      exist, the fields will be used to create a DSI in the cloud.
+      -->
+         <serialNumber>DSI0001</serialNumber>
+         <tag>12345678</tag>
+         <firmware>
+            <micro>2015-02-19</micro>
+            <fpga>10</fpga>
+         </firmware>
+         <packetVersion>1.0</packetVersion>
+         <baudRate>115200</baudRate>
+         <parity>1</parity>
+         <probes>
+            <probe num="1" latitude="23.3434" longitude="-34.341234">
+               <!--
+            Sequence number is required. Will be used to find the probe in the
+            cloud by concatenating it with the serial # (serialNumber + '-' +
+            sequenceNumber). If the record exists, the following fields will be
+            ignored. If it does not exist, the fields will be used to create a
+            probe in the cloud.
+            -->
+               <!-- Values based on Jim's sample code for thickness calculation. -->
+               <model>AL06S</model>
+               <type>Vertical</type>
+               <description>Engineering Test</description>
+               <nominalThickness>0.0875</nominalThickness>
+               <minimumThickness>0.0525</minimumThickness>
+               <velocity>5900</velocity>
+               <calZeroOffset>460e-9</calZeroOffset>
+               <!-- microseconds, but jims code is m/s -->
+               <setups>
+                  <setup num="1">
+                     <dsiTemp>78</dsiTemp>
+                     <materialTemp>69</materialTemp>
+                     <status>0</status>
+                     <calculatedThickness>.12</calculatedThickness>
+                     <timestamp>2014-02-10T20:00:00</timestamp>
+                     <lastThickness>.1</lastThickness>
+                     <lastTimestamp>2014-02-24T16:00:00</lastTimestamp>
+                     <pulserWidth>3</pulserWidth>
+                     <gain>400</gain>
+                     <muxSwitchSettings>128</muxSwitchSettings>
+                     <!-- 0x0080 -->
+                     <switchSettings>1034</switchSettings>
+                     <!-- 1034 == 0x040a, 522 == 0x020a -->
+                     <ascanStart>10</ascanStart>
+                     <gates>
+                        <gate num="1">
+                           <start>150</start>
+                           <width>500</width>
+                           <threshold>-10000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                        <gate num="2">
+                           <start>650</start>
+                           <width>500</width>
+                           <threshold>-7000</threshold>
+                           <mode>0</mode>
+                           <tof>1234</tof>
+                           <amplitude>1</amplitude>
+                        </gate>
+                     </gates>
+                  </setup>
+               </setups>
+            </probe>
+         </probes>
+      </dsi>
+   </dsis>
+</nanosense>
