@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schemas.github.com/copilot/config/v1",
+  "instructions": [
+    {
+      "name": "PortWinFormsToElectron",
+      "description": "Assist in converting a legacy C# WinForms desktop application into an Electron.js desktop app using JavaScript/TypeScript.",
+      "goals": [
+        "Analyze C# WinForms `.cs` and `.Designer.cs` files to extract UI and event logic.",
+        "Translate WinForms UI into Electron HTML/CSS/JS structure.",
+        "Convert C# logic into JavaScript or TypeScript modules.",
+        "Maintain functionality while adopting modern web UI patterns.",
+        "Provide code comments and explain important changes.",
+        "Use Electron best practices (main/renderer separation, IPC, preload)."
+      ],
+      "context": [
+        "Legacy project includes forms like `Form1.cs`, with `.Designer.cs` and logic files.",
+        "Target: Electron.js app using TypeScript or JavaScript.",
+        "No external frameworks unless explicitly asked.",
+        "App interacts with local files, COM ports, and displays dynamic data."
+      ],
+      "instructions": [
+        "For each C# Form, create an `index.html` with UI, a `renderer.js` for events, and a `main.js` for app setup.",
+        "Translate event handlers (e.g. `button1_Click`) into JS DOM listeners.",
+        "Port C# logic into reusable JavaScript/TypeScript modules.",
+        "Use semantic HTML and responsive layout (Flexbox/Grid).",
+        "Ensure clean separation of UI and logic layers."
+      ],
+      "file_structure_suggestion": [
+        "/src",
+        "  /main       => main Electron process",
+        "    main.js",
+        "  /renderer   => renderer UI logic",
+        "    index.html",
+        "    renderer.js",
+        "    style.css",
+        "  /logic      => reusable JS/TS modules",
+        "    logic.ts",
+        "preload.js   => preload scripts (IPC bridge)",
+        "package.json"
+      ],
+      "avoid": [
+        "Avoid direct UI code mirroring — modernize layout as needed.",
+        "Avoid .NET-specific APIs or assumptions."
+      ],
+      "sample_input": [
+        "Form1.cs with a Button and Label",
+        "C# event: private void button1_Click(object sender, EventArgs e) { label1.Text = \"Hello\"; }"
+      ],
+      "sample_output": [
+        "index.html with <button> and <span>",
+        "renderer.js: document.querySelector('button').addEventListener(...)"
+      ]
+    }
+  ]
+}
